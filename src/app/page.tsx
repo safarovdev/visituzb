@@ -256,8 +256,8 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-         <div className="mt-12 text-center">
-          <Button asChild>
+         <div className="mt-20 text-center">
+          <Button asChild size="lg" className="text-lg px-8">
             <Link href="/gallery">Смотреть всю галерею</Link>
           </Button>
         </div>
