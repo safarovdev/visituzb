@@ -57,6 +57,8 @@ export default function HomePage() {
   const heroImage = getImage('hero-uzbekistan');
   const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-')).slice(0, 8);
   const faqImage = getImage('gallery-3');
+  const contactImage1 = getImage('hero-uzbekistan');
+  const contactImage2 = getImage('tour-samarkand');
 
   return (
     <>
@@ -293,21 +295,45 @@ export default function HomePage() {
       {/* Contact Section */}
       <ScrollAnimation as="section" id="contact-form" className="bg-secondary">
         <div className="container">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">Нужна консультация?</h2>
-              <p className="text-xl text-muted-foreground">
-                Оставьте свои контакты, и наш специалист свяжется с вами, чтобы ответить на все вопросы и помочь с выбором тура.
-              </p>
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">Нужна консультация?</h2>
+                <p className="mt-4 text-xl text-muted-foreground max-w-lg">
+                  Оставьте свои контакты, и наш специалист свяжется с вами, чтобы ответить на все вопросы и помочь с выбором тура.
+                </p>
+              </div>
+              <div className="relative h-96 w-full max-w-lg lg:h-[450px]">
+                <div className="absolute top-0 left-0 w-3/5 h-3/5 -rotate-6 transform transition-transform duration-300 hover:rotate-0 hover:scale-105">
+                  <Image
+                    src={contactImage1.imageUrl}
+                    alt={contactImage1.description}
+                    fill
+                    className="rounded-2xl object-cover shadow-2xl"
+                    data-ai-hint={contactImage1.imageHint}
+                  />
+                </div>
+                <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rotate-3 transform transition-transform duration-300 hover:rotate-0 hover:scale-105">
+                  <Image
+                    src={contactImage2.imageUrl}
+                    alt={contactImage2.description}
+                    fill
+                    className="rounded-2xl object-cover shadow-2xl"
+                    data-ai-hint={contactImage2.imageHint}
+                  />
+                </div>
+              </div>
             </div>
-            <Card className="shadow-lg p-6 md:p-8">
-              <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-3xl">Форма обратной связи</CardTitle>
-              </CardHeader>
-              <CardContent className="p-0">
-                <ContactForm />
-              </CardContent>
-            </Card>
+            <div className="flex items-start justify-center lg:pt-8">
+              <Card className="w-full max-w-md shadow-2xl p-6 md:p-8">
+                <CardHeader className="p-0 mb-6 text-center">
+                  <CardTitle className="text-3xl">Форма обратной связи</CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <ContactForm />
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </ScrollAnimation>
