@@ -121,7 +121,7 @@ export default function HomePage() {
       {/* About in Numbers Section */}
       <section className="bg-secondary">
         <div className="container">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             <div>
               <h2 className="text-5xl font-bold tracking-tight">О нас в цифрах</h2>
               <p className="mt-4 text-xl text-muted-foreground">Наша репутация, подкрепленная фактами.</p>
@@ -203,7 +203,7 @@ export default function HomePage() {
               Ответы на самые популярные вопросы о путешествиях в Узбекистан.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="relative aspect-square w-full h-full min-h-[400px] overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src={faqImage.imageUrl}
@@ -255,7 +255,7 @@ export default function HomePage() {
       {/* Contact Section */}
       <section id="contact-form" className="bg-secondary">
         <div className="container">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start">
             <div>
               <h2 className="text-4xl font-bold tracking-tight">Нужна консультация?</h2>
               <p className="mt-4 text-xl text-muted-foreground">
