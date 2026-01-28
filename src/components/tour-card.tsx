@@ -13,14 +13,14 @@ type TourCardProps = {
 
 export function TourCard({ tour }: TourCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <Card className="group flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardHeader className="p-0">
-        <div className="relative aspect-[3/2] w-full">
+        <div className="relative aspect-[3/2] w-full overflow-hidden">
           <Image
             src={tour.image.imageUrl}
             alt={tour.name}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             data-ai-hint={tour.image.imageHint}
           />

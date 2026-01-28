@@ -14,7 +14,7 @@ export default function TeamPage() {
       <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {teamMembers.map((member) => (
             <div key={member.id} className="text-center">
-              <Avatar className="mx-auto h-40 w-40 shadow-lg">
+              <Avatar className="mx-auto h-40 w-40 shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl">
                 <AvatarImage src={member.image.imageUrl} alt={member.name} data-ai-hint={member.image.imageHint}/>
                 <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
               </Avatar>

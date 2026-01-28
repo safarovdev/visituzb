@@ -132,7 +132,7 @@ export default function HomePage() {
               <p className="mt-4 text-xl text-muted-foreground">Наша репутация, подкрепленная фактами.</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <h3 className="text-sm font-medium">Клиентов в год</h3>
                   <Users className="h-5 w-5 text-primary" />
@@ -141,7 +141,7 @@ export default function HomePage() {
                   <div className="text-3xl font-bold">5,000+</div>
                 </CardContent>
               </Card>
-              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <h3 className="text-sm font-medium">Рейтинг</h3>
                   <Star className="h-5 w-5 text-primary" />
@@ -168,7 +168,7 @@ export default function HomePage() {
             const memberImage = getImage(member.image.id);
             return (
               <div key={member.id} className="text-center">
-                <Avatar className="mx-auto h-32 w-32 shadow-lg">
+                <Avatar className="mx-auto h-32 w-32 shadow-lg transition-transform duration-300 hover:scale-110">
                   <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint}/>
                   <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                 </Avatar>
@@ -194,7 +194,7 @@ export default function HomePage() {
             </p>
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {advantages.map((adv) => (
-                    <div key={adv.title}>
+                    <div key={adv.title} className="p-6 rounded-2xl transition-all duration-300 hover:bg-card hover:shadow-xl hover:-translate-y-2">
                         <CheckCircle className="mx-auto h-12 w-12 text-primary" />
                         <h3 className="mt-4 text-xl font-semibold">{adv.title}</h3>
                         <p className="mt-2 text-base text-muted-foreground">{adv.description}</p>

@@ -29,7 +29,7 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
                 src={tour.image.imageUrl}
                 alt={tour.name}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300 hover:scale-105"
                 data-ai-hint={tour.image.imageHint}
                 sizes="(max-width: 1024px) 100vw, 67vw"
               />
@@ -61,7 +61,7 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
           </div>
           
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-primary/20 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="sticky top-24 border-primary/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardHeader>
                 <CardTitle className="text-xl">Забронировать тур</CardTitle>
                 <div className="pt-2 text-3xl font-bold">
