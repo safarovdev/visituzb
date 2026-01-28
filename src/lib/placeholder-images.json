@@ -3,103 +3,103 @@
     {
       "id": "hero-uzbekistan",
       "description": "Величественный Регистан в Самарканде на закате.",
-      "imageUrl": "https://images.unsplash.com/photo-1620176483109-5633a6a4a6f8?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1636308625150-79a17ded193d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYW1hcmthbmQlMjByZWdpc3RhbnxlbnwwfHx8fDE3Njk2MTMxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "samarkand registan"
     },
     {
       "id": "tour-samarkand",
       "description": "Архитектурный ансамбль Шахи-Зинда в Самарканде.",
-      "imageUrl": "https://images.unsplash.com/photo-1572014132867-6a1a1415a7e4?q=80&w=1935&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1715540335601-80fa7a03024a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzYW1hcmthbmQlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY5NjE3NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "samarkand architecture"
     },
     {
       "id": "tour-bukhara",
       "description": "Минарет Калян в Бухаре, символ города.",
-      "imageUrl": "https://images.unsplash.com/photo-1600023960864-a52148766f6c?q=80&w=1935&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1601963251218-816ff32e2baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidWtoYXJhJTIwbWluYXJldHxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bukhara minaret"
     },
     {
       "id": "tour-khiva",
       "description": "Древний город Ичан-Кала в Хиве.",
-      "imageUrl": "https://images.unsplash.com/photo-1601724032170-43455981d33b?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1756107778840-c5862cf1aa9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraGl2YSUyMGNpdHl8ZW58MHx8fHwxNzY5NjE3NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "khiva city"
     },
     {
       "id": "tour-tashkent",
       "description": "Станция метро в Ташкенте, известная своим уникальным дизайном.",
-      "imageUrl": "https://images.unsplash.com/photo-1598338988691-3898c642a8b3?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1659469688035-d4381fd67b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0YXNoa2VudCUyMG1ldHJvfGVufDB8fHx8MTc2OTYxNzQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tashkent metro"
     },
     {
       "id": "team-director",
       "description": "Портрет директора компании.",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk1NTAwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk1NTAwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional portrait"
     },
     {
       "id": "team-manager",
       "description": "Портрет тур-менеджера.",
-      "imageUrl": "https://images.unsplash.com/photo-1737642872807-9669a744de5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcmllbmRseSUyMHBlcnNvbnxlbnwwfHx8fDE3Njk2MTU5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635399191050-8d9189953ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnJpZW5kbHklMjBwZXJzb258ZW58MHx8fHwxNzY5NjE1OTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "friendly person"
     },
     {
       "id": "team-guide-1",
       "description": "Портрет опытного гида.",
-      "imageUrl": "https://images.unsplash.com/photo-1740380768382-89978bb69adf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzbWlsaW5nJTIwZ3VpZGV8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1507617470622-e254a32975d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzbWlsaW5nJTIwZ3VpZGV8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "smiling guide"
     },
     {
       "id": "team-driver-1",
       "description": "Портрет профессионального водителя.",
-      "imageUrl": "https://images.unsplash.com/photo-1674056982928-0e5b88fb2530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBkcml2ZXJ8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1692455546765-b7b6849ac9ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwZHJpdmVyfGVufDB8fHx8MTc2OTYxNTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional driver"
     },
     {
       "id": "gallery-1",
       "description": "Древние стены города Хива.",
-      "imageUrl": "https://images.unsplash.com/photo-1563222533-39f2257d0f4b?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1505779363118-944d5fd75b15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2hpdmElMjB3YWxsc3xlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "khiva walls"
     },
     {
       "id": "gallery-2",
       "description": "Яркий восточный базар с традиционным хлебом и специями.",
-      "imageUrl": "https://images.unsplash.com/photo-1610493237890-33756b5b43b6?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1718810613119-c0c4d234e5c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1emJla2lzdGFuJTIwbWFya2V0fGVufDB8fHx8MTc2OTYxNzQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan market"
     },
     {
       "id": "gallery-3",
       "description": "Детальная, красочная мозаика на стене медресе.",
-      "imageUrl": "https://images.unsplash.com/photo-1578384232378-62a25a91083e?q=80&w=1964&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1695324346578-139108204cca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1emJla2lzdGFuJTIwbW9zYWljfGVufDB8fHx8MTc2OTYxMzEyMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan mosaic"
     },
     {
       "id": "gallery-4",
       "description": "Аппетитная тарелка традиционного узбекского плова.",
-      "imageUrl": "https://images.unsplash.com/photo-1594979144498-1e42f7a93a9c?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1671048116858-e8ef69175b2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1emJla2lzdGFuJTIwZm9vZHxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan food"
     },
     {
       "id": "gallery-5",
       "description": "Величественный вход в мечеть Биби-Ханым в Самарканде.",
-      "imageUrl": "https://images.unsplash.com/photo-1588722765377-50a302302148?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1715540335591-8c7db66f7a41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW1hcmthbmQlMjBtb3NxdWV8ZW58MHx8fHwxNzY5NjE3NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "samarkand mosque"
     },
     {
       "id": "gallery-6",
       "description": "Захватывающий горный пейзаж в Узбекистане.",
-      "imageUrl": "https://images.unsplash.com/photo-1615288769229-a035e5751934?q=80&w=2003&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1682252913872-2ec60d4b0818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1emJla2lzdGFuJTIwbW91bnRhaW5zfGVufDB8fHx8MTc2OTYxNzQ1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan mountains"
     },
     {
       "id": "gallery-7",
       "description": "Красочные, традиционные узбекские ткани.",
-      "imageUrl": "https://images.unsplash.com/photo-1623862413768-45e0c50b69c8?q=80&w=1968&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1681999656602-bb4a2f4c284b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1emJla2lzdGFuJTIwZmFicmljfGVufDB8fHx8MTc2OTYxNzQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan fabric"
     },
     {
       "id": "gallery-8",
       "description": "Красивая расписная керамика ручной работы.",
-      "imageUrl": "https://images.unsplash.com/photo-1634591965679-cb292911d6b0?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1727354484577-d3adaca753fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1emJla2lzdGFuJTIwcG90dGVyeXxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan pottery"
     }
   ]
