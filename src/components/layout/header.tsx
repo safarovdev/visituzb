@@ -15,7 +15,6 @@ const navLinks = [
   { href: '/about', label: 'О компании' },
   { href: '/reviews', label: 'Отзывы' },
   { href: '/faq', label: 'FAQ' },
-  { href: '/contact', label: 'Контакты' },
 ];
 
 export function Header() {
@@ -29,7 +28,7 @@ export function Header() {
           <Mountain className="h-6 w-6 text-primary" />
           <span className="font-bold text-xl tracking-tighter">Visit Uzbekistan</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium absolute left-1/2 -translate-x-1/2">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -44,33 +43,38 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
-          <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Открыть меню</span>
+        <div className="flex items-center gap-4">
+            <Button asChild className="hidden md:flex">
+                <Link href="/contact">Связаться</Link>
             </Button>
-          </SheetTrigger>
-          <SheetContent side="left">
-            <Link href="/" className="flex items-center gap-2 mb-8" prefetch={false}>
-              <Mountain className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl tracking-tighter">Visit Uzbekistan</span>
-            </Link>
-            <div className="grid gap-4">
-              {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-lg font-medium transition-colors hover:text-primary"
-                  onClick={() => setMenuOpen(false)}
-                  prefetch={false}
-                >
-                  {label}
+            <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="icon" className="md:hidden">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Открыть меню</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <Link href="/" className="flex items-center gap-2 mb-8" prefetch={false} onClick={() => setMenuOpen(false)}>
+                  <Mountain className="h-6 w-6 text-primary" />
+                  <span className="font-bold text-xl tracking-tighter">Visit Uzbekistan</span>
                 </Link>
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
+                <div className="grid gap-4">
+                  {[...navLinks, { href: '/contact', label: 'Контакты' }].map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="text-lg font-medium transition-colors hover:text-primary"
+                      onClick={() => setMenuOpen(false)}
+                      prefetch={false}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+        </div>
       </div>
     </header>
   );

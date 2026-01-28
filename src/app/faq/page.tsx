@@ -28,15 +28,15 @@ export default function FaqPage() {
   return (
     <div className="container max-w-4xl py-12 md:py-20">
       <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">Часто задаваемые вопросы</h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+        <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">Часто задаваемые вопросы</h1>
+        <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
           Здесь мы собрали ответы на самые популярные вопросы о путешествиях в Узбекистан.
         </p>
       </div>
       <Accordion type="single" collapsible className="mt-12 w-full">
         {faqs.map((faq, index) => (
           <AccordionItem value={`item-${index}`} key={index}>
-            <AccordionTrigger className="text-left text-lg hover:no-underline">{faq.question}</AccordionTrigger>
+            <AccordionTrigger className="text-left text-xl hover:no-underline">{faq.question}</AccordionTrigger>
             <AccordionContent className="text-base text-muted-foreground">
               {faq.answer}
             </AccordionContent>

@@ -33,7 +33,7 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
                 sizes="(max-width: 1024px) 100vw, 67vw"
               />
             </div>
-            <h1 className="text-3xl font-bold tracking-tight md:text-4xl">{tour.name}</h1>
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">{tour.name}</h1>
             <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-muted-foreground">
               <div className="flex items-center gap-2">
                 <User className="h-5 w-5 text-primary" />

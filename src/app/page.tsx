@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative -mt-16 h-[70vh] min-h-[500px] w-full pt-16">
+      <section className="relative -mt-16 h-[85vh] min-h-[650px] w-full pt-16">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImage.imageUrl}
@@ -37,11 +37,11 @@ export default function HomePage() {
             priority
             data-ai-hint={heroImage.imageHint}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
         </div>
         <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">Откройте Сердце Шелкового Пути</h1>
-          <p className="mt-4 max-w-2xl text-lg text-white/90 md:text-xl">
+          <h1 className="text-5xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">Откройте Сердце Шелкового Пути</h1>
+          <p className="mt-4 max-w-3xl text-xl text-white/90 md:text-2xl">
             Исследуйте древние города, величественную архитектуру и богатое культурное наследие Узбекистана с нашими эксклюзивными турами.
           </p>
           <div className="mt-8">
@@ -55,8 +55,8 @@ export default function HomePage() {
         <div className="container">
           <div className="mb-12 flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Готовые туры для идеального путешествия</h2>
-              <p className="mt-2 text-muted-foreground">Самые популярные маршруты, проверенные временем и сотнями довольных туристов.</p>
+              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Готовые туры для идеального путешествия</h2>
+              <p className="mt-2 text-lg text-muted-foreground">Самые популярные маршруты, проверенные временем и сотнями довольных туристов.</p>
             </div>
             <Button asChild variant="outline">
               <Link href="/tours">
@@ -74,8 +74,8 @@ export default function HomePage() {
 
       {/* Individual Tour Section */}
       <section id="custom-tour" className="container text-center">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Не нашли свой тур?</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Не нашли свой тур?</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
           Мы с радостью создадим для вас индивидуальный маршрут, учитывая все ваши пожелания.
         </p>
         <div className="mt-8">
@@ -90,8 +90,8 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">О компании в цифрах</h2>
-              <p className="mt-4 text-muted-foreground">Наша репутация, подкрепленная фактами и доверием наших клиентов.</p>
+              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">О компании в цифрах</h2>
+              <p className="mt-4 text-lg text-muted-foreground">Наша репутация, подкрепленная фактами и доверием наших клиентов.</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -120,8 +120,8 @@ export default function HomePage() {
       {/* Our Team Section */}
       <section className="container">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Наша команда</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Профессионалы, которые сделают ваше путешествие незабываемым.
           </p>
         </div>
@@ -145,8 +145,8 @@ export default function HomePage() {
       {/* Advantages Section */}
       <section className="bg-secondary">
         <div className="container text-center">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Почему мы?</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Почему мы?</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
                 Ваше идеальное путешествие - наша работа.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -165,8 +165,8 @@ export default function HomePage() {
       {/* Gallery Section */}
       <section className="container">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Галерея</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Галерея</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Моменты из путешествий, которые останутся в памяти навсегда.
           </p>
         </div>
@@ -191,8 +191,8 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight">Нужна консультация?</h2>
-              <p className="mt-4 text-muted-foreground">
+              <h2 className="text-4xl font-bold tracking-tight">Нужна консультация?</h2>
+              <p className="mt-4 text-lg text-muted-foreground">
                 Оставьте свои контакты, и наш специалист свяжется с вами, чтобы ответить на все вопросы и помочь с выбором тура.
               </p>
             </div>
