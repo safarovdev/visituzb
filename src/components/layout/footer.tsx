@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Mountain } from 'lucide-react';
 
 const navLinks = [
   { href: '/tours', label: 'Каталог туров' },
@@ -21,7 +21,10 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold tracking-tighter">LOGO <span className="text-primary">Visit Uzbekistan</span></h3>
+            <Link href="/" className="flex items-center gap-2">
+              <Mountain className="h-7 w-7 text-primary" />
+              <span className="text-xl font-bold tracking-tighter">Visit Uzbekistan</span>
+            </Link>
             <p className="mt-4 max-w-xs text-muted-foreground">
               Ваш надежный партнер в путешествиях по солнечному Узбекистану.
             </p>

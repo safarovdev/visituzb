@@ -47,7 +47,7 @@ export function TourSearchDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button size="lg" className="text-lg animate-pulse">Подобрать тур сейчас</Button>
+        <Button size="lg" className="text-lg">Подобрать тур сейчас</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[625px]">
         <DialogHeader>

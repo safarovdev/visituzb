@@ -37,7 +37,7 @@ export default function HomePage() {
             priority
             data-ai-hint={heroImage.imageHint}
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
         </div>
         <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
           <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">Откройте Сердце Шелкового Пути</h1>
@@ -92,9 +92,6 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">О компании в цифрах</h2>
               <p className="mt-4 text-muted-foreground">Наша репутация, подкрепленная фактами и доверием наших клиентов.</p>
-              <div className="mt-8 flex justify-center">
-                <Button size="lg" variant="outline">Документы и лицензия</Button>
-              </div>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <Card>
