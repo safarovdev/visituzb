@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative -mt-16 h-[85vh] min-h-[650px] w-full pt-16">
+      <section className="relative h-[90vh] w-full">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImage.imageUrl}
