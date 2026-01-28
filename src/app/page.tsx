@@ -15,6 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 const getImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
@@ -52,13 +53,13 @@ const faqs = [
 
 export default function HomePage() {
   const heroImage = getImage('hero-uzbekistan');
-  const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-'));
+  const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-')).slice(0, 8);
   const faqImage = getImage('gallery-3');
 
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[95vh] w-full pt-20">
+      <ScrollAnimation as="section" className="relative h-[95vh] w-full">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImage.imageUrl}
@@ -77,14 +78,14 @@ export default function HomePage() {
           </p>
           <div className="mt-10">
             <Button size="lg" asChild className="text-xl px-10 py-8">
-              <Link href="/tours/search">Подобрать тур сейчас</Link>
+              <Link href="/tours">Подобрать тур сейчас</Link>
             </Button>
           </div>
         </div>
-      </section>
+      </ScrollAnimation>
 
       {/* Featured Tours Section */}
-      <section className="bg-secondary">
+      <ScrollAnimation as="section" className="bg-secondary">
         <div className="container">
           <div className="mb-12 flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
             <div>
@@ -103,10 +104,10 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </ScrollAnimation>
 
       {/* Individual Tour Section */}
-      <section id="custom-tour" className="container text-center">
+      <ScrollAnimation as="section" id="custom-tour" className="container text-center">
         <h2 className="text-5xl font-bold tracking-tight">Не нашли свой тур?</h2>
         <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
           Мы с радостью создадим для вас индивидуальный маршрут, учитывая все ваши пожелания.
@@ -116,10 +117,10 @@ export default function HomePage() {
             <a href="#contact-form">Подобрать индивидуальный тур</a>
           </Button>
         </div>
-      </section>
+      </ScrollAnimation>
 
       {/* About in Numbers Section */}
-      <section className="bg-secondary">
+      <ScrollAnimation as="section" className="bg-secondary">
         <div className="container">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             <div>
@@ -148,10 +149,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollAnimation>
 
       {/* Our Team Section */}
-      <section className="container">
+      <ScrollAnimation as="section" className="container">
         <div className="text-center">
           <h2 className="text-5xl font-bold tracking-tight">Наша команда</h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
@@ -173,10 +174,15 @@ export default function HomePage() {
             );
           })}
         </div>
-      </section>
+        <div className="mt-12 text-center">
+          <Button asChild>
+            <Link href="/team">Вся наша команда</Link>
+          </Button>
+        </div>
+      </ScrollAnimation>
 
       {/* Advantages Section */}
-      <section className="bg-secondary">
+      <ScrollAnimation as="section" className="bg-secondary">
         <div className="container text-center">
             <h2 className="text-5xl font-bold tracking-tight">Почему мы?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
@@ -192,10 +198,10 @@ export default function HomePage() {
                 ))}
             </div>
         </div>
-      </section>
+      </ScrollAnimation>
 
       {/* FAQ Section */}
-      <section>
+      <ScrollAnimation as="section">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-5xl font-bold tracking-tight">Часто задаваемые вопросы</h2>
@@ -225,11 +231,11 @@ export default function HomePage() {
             </Accordion>
           </div>
         </div>
-      </section>
+      </ScrollAnimation>
 
 
       {/* Gallery Section */}
-      <section className="container">
+      <ScrollAnimation as="section" className="container">
         <div className="text-center">
           <h2 className="text-5xl font-bold tracking-tight">Галерея</h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
@@ -250,10 +256,15 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </section>
+         <div className="mt-12 text-center">
+          <Button asChild>
+            <Link href="/gallery">Смотреть всю галерею</Link>
+          </Button>
+        </div>
+      </ScrollAnimation>
 
       {/* Contact Section */}
-      <section id="contact-form" className="bg-secondary">
+      <ScrollAnimation as="section" id="contact-form" className="bg-secondary">
         <div className="container">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start">
             <div>
@@ -272,7 +283,7 @@ export default function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </ScrollAnimation>
     </>
   );
 }

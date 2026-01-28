@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <div className="relative flex min-h-dvh flex-col bg-background">
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow animate-fade-in">{children}</main>
           <Footer />
         </div>
         <Toaster />
