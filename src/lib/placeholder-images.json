@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-uzbekistan",
+      "description": "Breathtaking panoramic view of a historic city in Uzbekistan at sunset.",
+      "imageUrl": "https://images.unsplash.com/photo-1706202362645-ed787fbd4bd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoaXN0b3JpYyUyMGNpdHl8ZW58MHx8fHwxNzY5NjE1OTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historic city"
+    },
+    {
+      "id": "tour-samarkand",
+      "description": "The Registan square in Samarkand with its three grand madrasahs.",
+      "imageUrl": "https://images.unsplash.com/photo-1471724603960-98bc193c621d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbmNpZW50JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2OTYwNTc4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient architecture"
+    },
+    {
+      "id": "tour-bukhara",
+      "description": "Kalyan Minaret and surrounding historical buildings in Bukhara.",
+      "imageUrl": "https://images.unsplash.com/photo-1655111670235-a86364b4ab1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaXN0b3JpYyUyMHN0cmVldHxlbnwwfHx8fDE3Njk2MTU5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historic street"
+    },
+    {
+      "id": "tour-khiva",
+      "description": "The walled inner city of Khiva, Ichon-Qala, with its sand-colored buildings.",
+      "imageUrl": "https://images.unsplash.com/photo-1565946417474-38e90f0c4153?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkZXNlcnQlMjBjaXR5fGVufDB8fHx8MTc2OTYxNTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert city"
+    },
+    {
+      "id": "tour-tashkent",
+      "description": "Modern architecture of Tashkent combined with traditional patterns.",
+      "imageUrl": "https://images.unsplash.com/photo-1712591009476-5fe03c2ea938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBjaXR5fGVufDB8fHx8MTc2OTYxNTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern city"
+    },
+    {
+      "id": "team-director",
+      "description": "Portrait of the company director.",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk1NTAwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-manager",
+      "description": "Portrait of the tour manager.",
+      "imageUrl": "https://images.unsplash.com/photo-1737642872807-9669a744de5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcmllbmRseSUyMHBlcnNvbnxlbnwwfHx8fDE3Njk2MTU5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friendly person"
+    },
+    {
+      "id": "team-guide-1",
+      "description": "Portrait of a knowledgeable tour guide.",
+      "imageUrl": "https://images.unsplash.com/photo-1740380768382-89978bb69adf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzbWlsaW5nJTIwZ3VpZGV8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling guide"
+    },
+    {
+      "id": "team-driver-1",
+      "description": "Portrait of an experienced driver.",
+      "imageUrl": "https://images.unsplash.com/photo-1674056982928-0e5b88fb2530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBkcml2ZXJ8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional driver"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Camel caravan in the desert.",
+      "imageUrl": "https://images.unsplash.com/photo-1559292689-3c2399e50048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkZXNlcnQlMjBjYXJhdmFufGVufDB8fHx8MTc2OTYxNTkwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert caravan"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Colorful local market with spices and textiles.",
+      "imageUrl": "https://images.unsplash.com/photo-1572402123736-c79526db405a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2NhbCUyMG1hcmtldHxlbnwwfHx8fDE3Njk2MTU5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "local market"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Intricate tilework on a madrasah wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1731045521188-5cd9014f88d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3NhaWMlMjB0aWxlc3xlbnwwfHx8fDE3Njk1MzgwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mosaic tiles"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Traditional Uzbek pilaf being cooked in a large kazan.",
+      "imageUrl": "https://images.unsplash.com/photo-1665601443439-4d9a807ca66a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJhZGl0aW9uYWwlMjBmb29kfGVufDB8fHx8MTc2OTYxNTkwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "traditional food"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Group of happy tourists in front of a landmark.",
+      "imageUrl": "https://images.unsplash.com/photo-1692462464995-8daebaca44d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYXBweSUyMHRvdXJpc3RzfGVufDB8fHx8MTc2OTYxNTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy tourists"
+    },
+    {
+      "id": "gallery-6",
+      "description": "View of the mountains in Uzbekistan.",
+      "imageUrl": "https://images.unsplash.com/photo-1613075019881-f475574c236a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3Njk1NjI0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain landscape"
+    },
+    {
+      "id": "gallery-7",
+      "description": "A traditional dance performance.",
+      "imageUrl": "https://images.unsplash.com/photo-1690005887726-b3fddaa5085a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmb2xrJTIwZGFuY2V8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "folk dance"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Close-up of handmade pottery.",
+      "imageUrl": "https://images.unsplash.com/photo-1666608531317-06858b2c92c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kbWFkZSUyMHBvdHRlcnl8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handmade pottery"
+    }
+  ]
 }
