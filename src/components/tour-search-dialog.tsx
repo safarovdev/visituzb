@@ -1,10 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { useActions, type TourSearchOutput } from 'ai/rsc';
 import { Loader2, Sparkles, Search } from 'lucide-react';
 
-import { tourSearch } from '@/ai/flows/tour-search';
+import { tourSearch, type TourSearchOutput } from '@/ai/flows/tour-search';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,

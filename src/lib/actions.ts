@@ -38,9 +38,6 @@ export async function submitContactForm(
     // Here you would typically send an email, save to a DB, or call an external API
     console.log('New contact submission:', validatedFields.data);
 
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
     return { message: 'Спасибо! Ваша заявка отправлена. Мы скоро с вами свяжемся.' };
   } catch (e) {
     return {
