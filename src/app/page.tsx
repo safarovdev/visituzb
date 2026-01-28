@@ -4,10 +4,12 @@ import { Star, Users, CheckCircle, ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { tours } from '@/lib/tour-data';
 import { teamMembers } from '@/lib/team-data';
+import { reviews } from '@/lib/reviews-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { TourCard } from '@/components/tour-card';
+import { ReviewCard } from '@/components/review-card';
 import { ContactForm } from '@/components/contact-form';
 import {
   Accordion,
@@ -174,7 +176,7 @@ export default function HomePage() {
             );
           })}
         </div>
-        <div className="mt-12 text-center">
+        <div className="mt-12 flex justify-end">
           <Button asChild>
             <Link href="/team">Вся наша команда</Link>
           </Button>
@@ -232,6 +234,31 @@ export default function HomePage() {
           </div>
         </div>
       </ScrollAnimation>
+      
+      {/* Reviews Section */}
+      <ScrollAnimation as="section" className="bg-secondary">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-bold tracking-tight">Что говорят наши клиенты</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
+              Нам доверяют, и мы этим гордимся.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {reviews.slice(0, 2).map((review) => (
+              <ReviewCard key={review.id} review={review} />
+            ))}
+          </div>
+          <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/reviews">Смотреть все отзывы</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/contact">Оставить свой отзыв</Link>
+            </Button>
+          </div>
+        </div>
+      </ScrollAnimation>
 
 
       {/* Gallery Section */}
@@ -256,7 +283,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-         <div className="mt-20 text-center">
+         <div className="mt-20 flex justify-start">
           <Button asChild size="lg" className="text-lg px-8">
             <Link href="/gallery">Смотреть всю галерею</Link>
           </Button>

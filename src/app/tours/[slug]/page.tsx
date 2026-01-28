@@ -4,6 +4,7 @@ import { Check, User, CalendarDays, Tag } from 'lucide-react';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 export async function generateStaticParams() {
   return tours.map((tour) => ({
@@ -19,7 +20,7 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
   }
 
   return (
-    <div className="bg-background">
+    <ScrollAnimation className="bg-background">
       <div className="container max-w-7xl py-12 md:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
@@ -89,6 +90,6 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
           </div>
         </div>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 }

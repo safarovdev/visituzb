@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 export default function GalleryPage() {
   const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-'));
 
   return (
-    <section className="container py-12 md:py-20">
+    <ScrollAnimation as="section" className="container py-12 md:py-20">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">Галерея</h1>
         <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
@@ -26,6 +27,6 @@ export default function GalleryPage() {
           </div>
         ))}
       </div>
-    </section>
+    </ScrollAnimation>
   );
 }

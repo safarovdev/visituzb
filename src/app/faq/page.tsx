@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 const faqs = [
   {
@@ -26,7 +27,7 @@ const faqs = [
 
 export default function FaqPage() {
   return (
-    <div className="container max-w-4xl py-12 md:py-20">
+    <ScrollAnimation className="container max-w-4xl py-12 md:py-20">
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">Часто задаваемые вопросы</h1>
         <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
@@ -43,6 +44,6 @@ export default function FaqPage() {
           </AccordionItem>
         ))}
       </Accordion>
-    </div>
+    </ScrollAnimation>
   );
 }

@@ -1,10 +1,11 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 export default function ContactPage() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <ScrollAnimation as="section" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="space-y-8">
@@ -67,6 +68,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </section>
+    </ScrollAnimation>
   );
 }

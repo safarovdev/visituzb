@@ -101,6 +101,30 @@
       "description": "Красивая расписная керамика ручной работы.",
       "imageUrl": "https://images.unsplash.com/photo-1727354484577-d3adaca753fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1emJla2lzdGFuJTIwcG90dGVyeXxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "uzbekistan pottery"
+    },
+    {
+      "id": "review-avatar-1",
+      "description": "Портрет довольного клиента мужчины.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG1hbGV8ZW58MHx8fHwxNzcwMjE4MjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "review-avatar-2",
+      "description": "Портрет довольной клиентки женщины.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGZlbWFsZXxlbnwwfHx8fDE3NzAyMTgyNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "female portrait"
+    },
+    {
+      "id": "review-avatar-3",
+      "description": "Портрет улыбающегося клиента.",
+      "imageUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWlsaW5nJTIwbWFufGVufDB8fHx8MTc3MDIxODI1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling man"
+    },
+    {
+      "id": "review-avatar-4",
+      "description": "Портрет путешественницы.",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc3MDIxODI1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
     }
   ]
 }

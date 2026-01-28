@@ -17,3 +17,12 @@ export type TeamMember = {
   role: string;
   image: ImagePlaceholder;
 };
+
+export type Review = {
+  id: string;
+  name: string;
+  location: string;
+  rating: number;
+  text: string;
+  image: ImagePlaceholder;
+};
