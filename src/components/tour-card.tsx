@@ -13,7 +13,7 @@ type TourCardProps = {
 
 export function TourCard({ tour }: TourCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardHeader className="p-0">
         <div className="relative aspect-[3/2] w-full">
           <Image

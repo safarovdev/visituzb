@@ -94,7 +94,7 @@ export default function HomePage() {
               <p className="mt-4 text-muted-foreground">Наша репутация, подкрепленная фактами и доверием наших клиентов.</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <Card>
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <h3 className="text-sm font-medium">Клиентов в год</h3>
                   <Users className="h-5 w-5 text-primary" />
@@ -103,7 +103,7 @@ export default function HomePage() {
                   <div className="text-2xl font-bold">5,000+</div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <h3 className="text-sm font-medium">Рейтинг</h3>
                   <Star className="h-5 w-5 text-primary" />
@@ -196,7 +196,7 @@ export default function HomePage() {
                 Оставьте свои контакты, и наш специалист свяжется с вами, чтобы ответить на все вопросы и помочь с выбором тура.
               </p>
             </div>
-            <Card>
+            <Card className="shadow-lg">
               <CardHeader>
                 <h3 className="text-xl font-semibold">Форма обратной связи</h3>
               </CardHeader>

@@ -60,7 +60,7 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
           </div>
           
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-primary/20 shadow-lg">
+            <Card className="sticky top-24 border-primary/20 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle className="text-xl">Забронировать тур</CardTitle>
                 <div className="pt-2 text-3xl font-bold">
