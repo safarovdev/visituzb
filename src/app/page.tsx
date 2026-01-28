@@ -63,7 +63,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <ScrollAnimation as="section" className="relative h-[95vh] w-full">
+      <ScrollAnimation as="section" className="relative h-[95vh] w-full pt-0">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImage.imageUrl}
@@ -93,7 +93,7 @@ export default function HomePage() {
         <div className="container">
           <div className="mb-12 flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
             <div>
-              <h2 className="text-5xl font-bold tracking-tight">Готовые туры</h2>
+              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Готовые туры</h2>
               <p className="mt-2 text-xl text-muted-foreground">Самые популярные маршруты, проверенные временем.</p>
             </div>
             <Button asChild variant="outline">
@@ -112,7 +112,7 @@ export default function HomePage() {
 
       {/* Individual Tour Section */}
       <ScrollAnimation as="section" id="custom-tour" className="container text-center">
-        <h2 className="text-5xl font-bold tracking-tight">Не нашли свой тур?</h2>
+        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Не нашли свой тур?</h2>
         <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
           Мы с радостью создадим для вас индивидуальный маршрут, учитывая все ваши пожелания.
         </p>
@@ -128,7 +128,7 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             <div>
-              <h2 className="text-5xl font-bold tracking-tight">О нас в цифрах</h2>
+              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">О нас в цифрах</h2>
               <p className="mt-4 text-xl text-muted-foreground">Наша репутация, подкрепленная фактами.</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -158,7 +158,7 @@ export default function HomePage() {
       {/* Our Team Section */}
       <ScrollAnimation as="section" className="container">
         <div className="text-center">
-          <h2 className="text-5xl font-bold tracking-tight">Наша команда</h2>
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Профессионалы, которые сделают ваше путешествие незабываемым.
           </p>
@@ -188,7 +188,7 @@ export default function HomePage() {
       {/* Advantages Section */}
       <ScrollAnimation as="section" className="bg-secondary">
         <div className="container text-center">
-            <h2 className="text-5xl font-bold tracking-tight">Почему мы?</h2>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Почему мы?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
                 Ваше идеальное путешествие - наша работа.
             </p>
@@ -208,7 +208,7 @@ export default function HomePage() {
       <ScrollAnimation as="section">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold tracking-tight">Часто задаваемые вопросы</h2>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Часто задаваемые вопросы</h2>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
               Ответы на самые популярные вопросы о путешествиях в Узбекистан.
             </p>
@@ -241,7 +241,7 @@ export default function HomePage() {
       <ScrollAnimation as="section" className="bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold tracking-tight">Что говорят наши клиенты</h2>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Что говорят наши клиенты</h2>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
               Нам доверяют, и мы этим гордимся.
             </p>
@@ -266,7 +266,7 @@ export default function HomePage() {
       {/* Gallery Section */}
       <ScrollAnimation as="section" className="container">
         <div className="text-center">
-          <h2 className="text-5xl font-bold tracking-tight">Галерея</h2>
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Галерея</h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Моменты из путешествий, которые останутся в памяти навсегда.
           </p>

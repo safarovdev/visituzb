@@ -54,7 +54,7 @@ export function Header() {
                   <span className="sr-only">Открыть меню</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left">
+              <SheetContent side="right">
                 <Link href="/" className="flex items-center gap-2 mb-8" prefetch={false} onClick={() => setMenuOpen(false)}>
                   <Mountain className="h-6 w-6 text-primary" />
                   <span className="font-bold text-xl tracking-tighter">Visit Uzbekistan</span>
