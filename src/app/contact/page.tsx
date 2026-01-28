@@ -57,11 +57,11 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <Card className="w-full max-w-md shadow-2xl">
-              <CardHeader>
+            <Card className="w-full max-w-md shadow-2xl p-6 md:p-8">
+              <CardHeader className="p-0 mb-6 text-center">
                 <CardTitle className="text-3xl">Отправить сообщение</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-0">
                 <ContactForm />
               </CardContent>
             </Card>

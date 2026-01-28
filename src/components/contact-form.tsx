@@ -19,7 +19,7 @@ function SubmitButton() {
   const { pending } = useFormStatus();
 
   return (
-    <Button type="submit" className="w-full" disabled={pending}>
+    <Button type="submit" className="w-full" disabled={pending} size="lg">
       {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
       Отправить заявку
     </Button>
@@ -48,20 +48,20 @@ export function ContactForm() {
   }, [state, toast]);
 
   return (
-    <form action={formAction} className="space-y-4">
-      <div>
+    <form action={formAction} className="space-y-6">
+      <div className="space-y-2">
         <Label htmlFor="name">Ваше имя</Label>
         <Input type="text" id="name" name="name" placeholder="Иван" required />
         {state.errors?.name && <p className="mt-1 text-xs text-destructive">{state.errors.name.join(', ')}</p>}
       </div>
-      <div>
+      <div className="space-y-2">
         <Label htmlFor="phone">Номер телефона</Label>
         <Input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required />
         {state.errors?.phone && <p className="mt-1 text-xs text-destructive">{state.errors.phone.join(', ')}</p>}
       </div>
-      <div>
+      <div className="space-y-2">
         <Label htmlFor="message">Ваше сообщение (необязательно)</Label>
-        <Textarea id="message" name="message" placeholder="Хочу узнать больше о туре в Самарканд..." />
+        <Textarea id="message" name="message" placeholder="Хочу узнать больше о туре в Самарканд..." rows={4} />
          {state.errors?.message && <p className="mt-1 text-xs text-destructive">{state.errors.message.join(', ')}</p>}
       </div>
       <SubmitButton />

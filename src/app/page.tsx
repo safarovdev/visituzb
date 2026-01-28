@@ -6,7 +6,7 @@ import { tours } from '@/lib/tour-data';
 import { teamMembers } from '@/lib/team-data';
 import { reviews } from '@/lib/reviews-data';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { TourCard } from '@/components/tour-card';
 import { ReviewCard } from '@/components/review-card';
@@ -293,18 +293,18 @@ export default function HomePage() {
       {/* Contact Section */}
       <ScrollAnimation as="section" id="contact-form" className="bg-secondary">
         <div className="container">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start">
-            <div>
-              <h2 className="text-4xl font-bold tracking-tight">Нужна консультация?</h2>
-              <p className="mt-4 text-xl text-muted-foreground">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">Нужна консультация?</h2>
+              <p className="text-xl text-muted-foreground">
                 Оставьте свои контакты, и наш специалист свяжется с вами, чтобы ответить на все вопросы и помочь с выбором тура.
               </p>
             </div>
-            <Card className="shadow-lg">
-              <CardHeader>
-                <h3 className="text-2xl font-semibold">Форма обратной связи</h3>
+            <Card className="shadow-lg p-6 md:p-8">
+              <CardHeader className="p-0 mb-6">
+                <CardTitle className="text-3xl">Форма обратной связи</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-0">
                 <ContactForm />
               </CardContent>
             </Card>
