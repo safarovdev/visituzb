@@ -41,10 +41,10 @@ export function TourCard({ tour }: TourCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex items-center justify-between p-6 pt-0">
-        <div className="text-2xl font-bold">
+        {/* <div className="text-2xl font-bold">
           ${tour.price}
           <span className="text-sm font-normal text-muted-foreground">/чел</span>
-        </div>
+        </div> */}
         <Button asChild variant="ghost" className="text-primary hover:text-primary">
           <Link href={`/tours/${tour.slug}`}>
             Подробнее <ArrowRight className="ml-2 h-4 w-4" />
