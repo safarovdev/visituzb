@@ -28,10 +28,10 @@ const getImage = (id: string) => {
 };
 
 const advantages = [
-  { title: "Эксклюзивные маршруты", description: "Мы создаем уникальные туры, которые вы не найдете больше нигде." },
-  { title: "Лучшие гиды", description: "Наши гиды - настоящие профессионалы и знатоки своего дела." },
-  { title: "Комфорт и безопасность", description: "Мы заботимся о каждой детали вашего путешествия." },
-  { title: "Поддержка 24/7", description: "Всегда на связи, чтобы помочь вам в любой ситуации." },
+  { title: "Уникальные маршруты", description: "Мы разрабатываем туры, которых нет в стандартных предложениях." },
+  { title: "Профессиональные гиды", description: "С вами работают опытные специалисты, знающие своё дело." },
+  { title: "Комфорт и безопасность", description: "Мы продумываем каждую деталь вашего путешествия." },
+  { title: "Поддержка 24/7", description: "Мы всегда на связи и готовы помочь в любой ситуации." },
 ];
 
 const faqs = [
@@ -76,15 +76,15 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
         </div>
         <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">Откройте Сердце Шелкового Пути</h1>
+          <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">Добавь в своё путешествие пряный аромат Востока.</h1>
           <p className="mt-6 max-w-4xl text-2xl text-white/90 md:text-3xl">
             Исследуйте древние города, величественную архитектуру и богатое культурное наследие Узбекистана с нашими эксклюзивными турами.
           </p>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <Button size="lg" asChild className="text-xl px-10 py-8">
               <Link href="/tours">Подобрать тур сейчас</Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </ScrollAnimation>
 
@@ -114,7 +114,7 @@ export default function HomePage() {
       <ScrollAnimation as="section" id="custom-tour" className="container text-center">
         <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Не нашли свой тур?</h2>
         <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-          Мы с радостью создадим для вас индивидуальный маршрут, учитывая все ваши пожелания.
+        Мы с радостью подберём и составим для вас индивидуальное путешествие, полностью учитывая ваши предпочтения.
         </p>
         <div className="mt-8">
           <Button size="lg" asChild className="text-lg">
@@ -124,7 +124,7 @@ export default function HomePage() {
       </ScrollAnimation>
 
       {/* About in Numbers Section */}
-      <ScrollAnimation as="section" className="bg-secondary">
+      {/* <ScrollAnimation as="section" className="bg-secondary">
         <div className="container">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             <div>
@@ -153,10 +153,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* Our Team Section */}
-      <ScrollAnimation as="section" className="container">
+      {/* <ScrollAnimation as="section" className="container">
         <div className="text-center">
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
@@ -183,14 +183,14 @@ export default function HomePage() {
             <Link href="/team">Вся наша команда</Link>
           </Button>
         </div>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* Advantages Section */}
       <ScrollAnimation as="section" className="bg-secondary">
         <div className="container text-center">
             <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Почему мы?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-                Ваше идеальное путешествие - наша работа.
+              Мы делаем каждое путешествие особенным для вас.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {advantages.map((adv) => (

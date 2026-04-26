@@ -10,11 +10,12 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { href: '/tours', label: 'Каталог туров' },
-  { href: '/#custom-tour', label: 'Свой тур' },
+  { href: '/tours', label: 'Подборка туров' },
+  { href: '/#custom-tour', label: 'Мой тур' },
   { href: '/about', label: 'О компании' },
   { href: '/reviews', label: 'Отзывы' },
   { href: '/faq', label: 'FAQ' },
+  { href: '#footer', label: 'Контакты' },
 ];
 
 export function Header() {

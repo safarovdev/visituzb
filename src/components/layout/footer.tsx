@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { Mail, Phone, MapPin, Mountain } from 'lucide-react';
 
 const navLinks = [
-  { href: '/tours', label: 'Каталог туров' },
+  { href: '/tours', label: 'Подборка туров' },
+  { href: '/#custom-tour', label: 'Мой тур' },
   { href: '/about', label: 'О компании' },
   { href: '/reviews', label: 'Отзывы' },
   { href: '/faq', label: 'FAQ' },
-  { href: '/contact', label: 'Контакты' },
+  { href: '#footer', label: 'Контакты' },
 ];
 
 const socialLinks = [
@@ -17,7 +18,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer id="footer" className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">

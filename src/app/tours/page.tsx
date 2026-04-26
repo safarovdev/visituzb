@@ -24,7 +24,7 @@ export default function ToursPage() {
       <section className="container text-center">
         <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Не нашли свой тур?</h2>
         <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-          Мы с радостью создадим для вас индивидуальный маршрут, учитывая все ваши пожелания.
+        Мы с радостью подберём и составим для вас индивидуальное путешествие, полностью учитывая ваши предпочтения.
         </p>
         <div className="mt-8">
           <Button size="lg" asChild className="text-lg">
