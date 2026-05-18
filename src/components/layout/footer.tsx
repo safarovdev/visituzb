@@ -1,8 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Mail, Phone, MapPin, Mountain } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const navLinks = [
   { href: '#tours', label: 'Подборка туров' },
@@ -38,9 +39,14 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2">
-              <Mountain className="h-7 w-7 text-primary" />
-            <span className="text-xl font-bold tracking-tighter">Shaffron Tour</span>
+            <Link href="/" className="flex items-center">
+              <Image 
+                src="https://i.postimg.cc/HLNrd3jV/Shaffron-Tour.png" 
+                alt="Shaffron Tour Logo" 
+                width={200} 
+                height={60} 
+                className="h-14 w-auto object-contain"
+              />
             </Link>
               <p className="mt-4 max-w-xs text-muted-foreground">
                 Ваш надежный партнер в путешествиях по Узбекистану с Shaffron Tour.

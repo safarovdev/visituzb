@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, Mountain, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
@@ -30,7 +31,6 @@ export function Header() {
       const element = document.getElementById(targetId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
-        // Update URL hash without reload
         window.history.pushState(null, '', href);
       }
     }
@@ -39,9 +39,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <Mountain className="h-6 w-6 text-primary" />
-          <span className="font-bold text-xl tracking-tighter">Shaffron Tour</span>
+        <Link href="/" className="flex items-center" prefetch={false}>
+          <Image 
+            src="https://i.postimg.cc/HLNrd3jV/Shaffron-Tour.png" 
+            alt="Shaffron Tour Logo" 
+            width={180} 
+            height={50} 
+            className="h-12 w-auto object-contain"
+            priority
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium absolute left-1/2 -translate-x-1/2">
           {navLinks.map(({ href, label }) => (
@@ -69,9 +75,14 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-full h-full p-0 flex flex-col">
                 <div className="container flex h-20 items-center justify-between border-b">
-                   <Link href="/" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
-                      <Mountain className="h-6 w-6 text-primary" />
-                      <span className="font-bold text-xl tracking-tighter">Shaffron Tour</span>
+                   <Link href="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
+                      <Image 
+                        src="https://i.postimg.cc/HLNrd3jV/Shaffron-Tour.png" 
+                        alt="Shaffron Tour Logo" 
+                        width={180} 
+                        height={50} 
+                        className="h-12 w-auto object-contain"
+                      />
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => setMenuOpen(false)}>
                       <X className="h-6 w-6" />
