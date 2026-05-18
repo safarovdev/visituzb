@@ -6,19 +6,21 @@ import { Menu, Mountain, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
-import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#tours', label: 'Подборка туров' },
-  { href: '#custom-tour', label: 'Мой тур' },
-  { href: '#about', label: 'О компании' },
-  { href: '#reviews', label: 'Отзывы' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact-form', label: 'Контакты' },
+  { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#about', label: 'О компании' },
+  { href: '/#reviews', label: 'Отзывы' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#contact-form', label: 'Контакты' },
 ];
 
 export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
@@ -41,7 +43,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
             <Button asChild className="hidden md:flex">
-                <Link href="#contact-form">Связаться</Link>
+                <Link href="/#contact-form">Связаться</Link>
             </Button>
             <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
@@ -52,7 +54,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-full h-full p-0 flex flex-col">
                 <div className="container flex h-20 items-center justify-between border-b">
-                   <Link href="/" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
+                   <Link href="/" className="flex items-center gap-2" onClick={handleLinkClick}>
                       <Mountain className="h-6 w-6 text-primary" />
                       <span className="font-bold text-xl tracking-tighter">Shaffron Tour</span>
                     </Link>
@@ -67,13 +69,13 @@ export function Header() {
                       key={href}
                       href={href}
                       className="text-3xl font-bold transition-colors hover:text-primary"
-                      onClick={() => setMenuOpen(false)}
+                      onClick={handleLinkClick}
                     >
                       {label}
                     </Link>
                   ))}
                   <Button asChild size="lg" className="mt-4 text-xl px-12 py-6">
-                      <Link href="#contact-form" onClick={() => setMenuOpen(false)}>Связаться</Link>
+                      <Link href="/#contact-form" onClick={handleLinkClick}>Связаться</Link>
                   </Button>
                 </div>
               </SheetContent>

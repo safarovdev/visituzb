@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle, ArrowRight, Star, Users, Briefcase } from 'lucide-react';
+import { CheckCircle, Check } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { tours } from '@/lib/tour-data';
 import { reviews } from '@/lib/reviews-data';
@@ -26,13 +26,6 @@ const getImage = (id: string) => {
   }
   return image;
 };
-
-const advantages = [
-  { title: "Уникальные маршруты", description: "Мы разрабатываем туры, которых нет в стандартных предложениях." },
-  { title: "Профессиональные гиды", description: "С вами работают опытные специалисты, знающие своё дело." },
-  { title: "Комфорт и безопасность", description: "Мы продумываем каждую деталь вашего путешествия." },
-  { title: "Поддержка 24/7", description: "Мы всегда на связи и готовы помочь в любой ситуации." },
-];
 
 const faqs = [
   {
@@ -90,7 +83,7 @@ export default function HomePage() {
       </ScrollAnimation>
 
       {/* Featured Tours Section */}
-      <section id="tours" className="bg-secondary py-20">
+      <section id="tours" className="bg-secondary">
         <div className="container">
           <div className="mb-12 text-center md:text-left">
             <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Популярные туры</h2>
@@ -104,23 +97,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Individual Tour Section */}
-      <section id="custom-tour" className="container py-20 text-center">
-        <ScrollAnimation>
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Индивидуальные программы</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-            Если вы не нашли подходящего варианта, мы с радостью составим для вас персональный маршрут по вашим пожеланиям.
-          </p>
-          <div className="mt-8">
-            <Button size="lg" asChild className="text-lg">
-              <Link href="#contact-form">Заказать расчет</Link>
-            </Button>
-          </div>
-        </ScrollAnimation>
-      </section>
-
       {/* About Section */}
-      <section id="about" className="bg-secondary py-20 overflow-hidden">
+      <section id="about" className="bg-background overflow-hidden">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="space-y-6">
@@ -152,29 +130,31 @@ export default function HomePage() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="container py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-            Профессионалы, которые сделают ваше путешествие незабываемым.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-          {teamMembers.map((member) => (
-              <div key={member.id} className="text-center">
-                <Avatar className="mx-auto h-40 w-40 shadow-lg transition-transform duration-300 hover:scale-110">
-                  <AvatarImage src={member.image.imageUrl} alt={member.name} data-ai-hint={member.image.imageHint}/>
-                  <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <h3 className="mt-6 text-2xl font-semibold">{member.name}</h3>
-                <p className="text-primary font-medium text-lg">{member.role}</p>
-              </div>
-          ))}
+      <section id="team" className="bg-secondary">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
+              Профессионалы, которые сделают ваше путешествие незабываемым.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+            {teamMembers.map((member) => (
+                <div key={member.id} className="text-center">
+                  <Avatar className="mx-auto h-40 w-40 shadow-lg transition-transform duration-300 hover:scale-110">
+                    <AvatarImage src={member.image.imageUrl} alt={member.name} data-ai-hint={member.image.imageHint}/>
+                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                  <h3 className="mt-6 text-2xl font-semibold">{member.name}</h3>
+                  <p className="text-primary font-medium text-lg">{member.role}</p>
+                </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="bg-secondary py-20">
+      <section id="gallery" className="bg-background">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold tracking-tight">Галерея моментов</h2>
@@ -197,19 +177,21 @@ export default function HomePage() {
       </section>
 
       {/* Reviews Section */}
-      <section id="reviews" className="container py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Отзывы наших клиентов</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reviews.map((review) => (
-            <ReviewCard key={review.id} review={review} />
-          ))}
+      <section id="reviews" className="bg-secondary">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Отзывы наших клиентов</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {reviews.map((review) => (
+              <ReviewCard key={review.id} review={review} />
+            ))}
+          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="bg-secondary py-20">
+      <section id="faq" className="bg-background">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-xl">
@@ -239,41 +221,43 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-form" className="container py-20">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
-          <div className="space-y-8">
-            <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">Свяжитесь с нами</h2>
-            <p className="text-xl text-muted-foreground">
-              Оставьте заявку, и наш специалист свяжется с вами для подбора идеального тура и индивидуального расчета стоимости.
-            </p>
-            <div className="relative h-96 w-full max-w-lg lg:h-[450px]">
-              <div className="absolute top-0 left-0 w-3/5 h-3/5 -rotate-6">
-                <Image
-                  src={contactImage1.imageUrl}
-                  alt={contactImage1.description}
-                  fill
-                  className="rounded-2xl object-cover shadow-2xl"
-                />
-              </div>
-              <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rotate-3">
-                <Image
-                  src={contactImage2.imageUrl}
-                  alt={contactImage2.description}
-                  fill
-                  className="rounded-2xl object-cover shadow-2xl"
-                />
+      <section id="contact-form" className="bg-secondary">
+        <div className="container">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+            <div className="space-y-8">
+              <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">Свяжитесь с нами</h2>
+              <p className="text-xl text-muted-foreground">
+                Оставьте заявку, и наш специалист свяжется с вами для подбора идеального тура и индивидуального расчета стоимости.
+              </p>
+              <div className="relative h-96 w-full max-w-lg lg:h-[450px]">
+                <div className="absolute top-0 left-0 w-3/5 h-3/5 -rotate-6">
+                  <Image
+                    src={contactImage1.imageUrl}
+                    alt={contactImage1.description}
+                    fill
+                    className="rounded-2xl object-cover shadow-2xl"
+                  />
+                </div>
+                <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rotate-3">
+                  <Image
+                    src={contactImage2.imageUrl}
+                    alt={contactImage2.description}
+                    fill
+                    className="rounded-2xl object-cover shadow-2xl"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <Card className="w-full max-w-md shadow-2xl p-6 md:p-8">
-              <CardHeader className="p-0 mb-6 text-center">
-                <CardTitle className="text-3xl">Форма заявки</CardTitle>
-              </CardHeader>
-              <CardContent className="p-0">
-                <ContactForm />
-              </CardContent>
-            </Card>
+            <div className="flex items-center justify-center">
+              <Card className="w-full max-w-md shadow-2xl p-6 md:p-8">
+                <CardHeader className="p-0 mb-6 text-center">
+                  <CardTitle className="text-3xl">Форма заявки</CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <ContactForm />
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

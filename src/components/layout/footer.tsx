@@ -2,12 +2,11 @@ import Link from 'next/link';
 import { Mail, Phone, MapPin, Mountain } from 'lucide-react';
 
 const navLinks = [
-  { href: '#tours', label: 'Подборка туров' },
-  { href: '#custom-tour', label: 'Мой тур' },
-  { href: '#about', label: 'О компании' },
-  { href: '#reviews', label: 'Отзывы' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact-form', label: 'Контакты' },
+  { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#about', label: 'О компании' },
+  { href: '/#reviews', label: 'Отзывы' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#contact-form', label: 'Контакты' },
 ];
 
 const socialLinks = [
