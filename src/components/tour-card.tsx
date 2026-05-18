@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, User, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 
 import type { Tour } from '@/lib/types';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -33,16 +33,9 @@ export function TourCard({ tour }: TourCardProps) {
             <MapPin className="h-4 w-4 text-primary" />
             <span>{tour.itinerary.slice(0, 2).join(', ')}...</span>
           </div>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <User className="h-4 w-4 text-primary" />
-            <span>Гид: {tour.guide}</span>
-          </div>
         </div>
       </CardContent>
-      <CardFooter className="flex items-center justify-between p-6 pt-0">
-        <div className="text-sm font-medium text-muted-foreground italic">
-          Индивидуальный расчет
-        </div>
+      <CardFooter className="flex items-center justify-end p-6 pt-0">
         <Button asChild variant="ghost" className="text-primary hover:text-primary p-0">
           <Link href={`/tours/${tour.slug}`}>
             Подробнее <ArrowRight className="ml-2 h-4 w-4" />

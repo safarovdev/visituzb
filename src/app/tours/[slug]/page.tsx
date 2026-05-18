@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { Check, User, CalendarDays } from 'lucide-react';
+import { Check, CalendarDays } from 'lucide-react';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollAnimation } from '@/components/scroll-animation';
+import Link from 'next/link';
 
 export async function generateStaticParams() {
   return tours.map((tour) => ({
@@ -38,10 +39,6 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">{tour.name}</h1>
             <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-muted-foreground">
               <div className="flex items-center gap-2">
-                <User className="h-5 w-5 text-primary" />
-                <span>Гид: {tour.guide}</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <CalendarDays className="h-5 w-5 text-primary" />
                 <span>{tour.itinerary.length} дней</span>
               </div>
@@ -65,22 +62,19 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             <Card className="sticky top-24 border-primary/20 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl">Забронировать тур</CardTitle>
-                <div className="pt-2 text-xl font-medium text-muted-foreground">
-                  Стоимость по запросу
-                </div>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
+                <div className="space-y-4">
                   <p className="text-sm text-muted-foreground mb-4">
-                    Расчет стоимости производится индивидуально нашими менеджерами.
+                    Оставьте заявку, и наши специалисты свяжутся с вами для уточнения всех деталей и подбора оптимальных условий.
                   </p>
-                  <Button size="lg" className="w-full text-lg">
-                    Оставить заявку
+                  <Button size="lg" className="w-full text-lg" asChild>
+                    <Link href="/#contact-form">Оставить заявку</Link>
                   </Button>
                   <p className="text-center text-xs text-muted-foreground">
-                    Мы свяжемся с вами в течение часа.
+                    Мы свяжемся с вами в кратчайшие сроки.
                   </p>
-                </form>
+                </div>
               </CardContent>
             </Card>
           </div>

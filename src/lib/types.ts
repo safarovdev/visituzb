@@ -6,7 +6,6 @@ export type Tour = {
   name: string;
   description: string;
   itinerary: string[];
-  guide: string;
   image: ImagePlaceholder;
 };
 
