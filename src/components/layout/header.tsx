@@ -10,10 +10,10 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 
 const navLinks = [
-  { href: '#tours', label: 'Подборка туров' },
-  { href: '#about', label: 'О компании' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact-form', label: 'Контакты' },
+  { href: '/#about', label: 'О компании' },
+  { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#contact-form', label: 'Контакты' },
 ];
 
 export function Header() {
@@ -23,11 +23,11 @@ export function Header() {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     setMenuOpen(false);
     
-    if (pathname === '/' && href.startsWith('#')) {
-      e.preventDefault();
-      const targetId = href.replace('#', '');
+    if (pathname === '/' && href.includes('#')) {
+      const targetId = href.split('#')[1];
       const element = document.getElementById(targetId);
       if (element) {
+        e.preventDefault();
         element.scrollIntoView({ behavior: 'smooth' });
         window.history.pushState(null, '', href);
       }
@@ -51,7 +51,7 @@ export function Header() {
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
-              href={pathname === '/' ? href : `/${href}`}
+              href={href}
               onClick={(e) => handleLinkClick(e, href)}
               className="text-foreground/60 transition-colors hover:text-foreground"
               prefetch={false}
@@ -62,7 +62,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
             <Button asChild className="hidden md:flex">
-                <Link href="#contact-form" onClick={(e) => handleLinkClick(e, '#contact-form')}>Связаться</Link>
+                <Link href="/#contact-form" onClick={(e) => handleLinkClick(e, '/#contact-form')}>Связаться</Link>
             </Button>
             <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
@@ -91,7 +91,7 @@ export function Header() {
                   {navLinks.map(({ href, label }) => (
                     <Link
                       key={href}
-                      href={pathname === '/' ? href : `/${href}`}
+                      href={href}
                       className="text-3xl font-bold transition-colors hover:text-primary"
                       onClick={(e) => handleLinkClick(e, href)}
                     >
@@ -99,7 +99,7 @@ export function Header() {
                     </Link>
                   ))}
                   <Button asChild size="lg" className="mt-4 text-xl px-12 py-6">
-                      <Link href="#contact-form" onClick={(e) => handleLinkClick(e, '#contact-form')}>Связаться</Link>
+                      <Link href="/#contact-form" onClick={(e) => handleLinkClick(e, '/#contact-form')}>Связаться</Link>
                   </Button>
                 </div>
               </SheetContent>

@@ -7,16 +7,10 @@ import { usePathname } from 'next/navigation';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const navLinks = [
-  { href: '#tours', label: 'Подборка туров' },
-  { href: '#about', label: 'О компании' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact-form', label: 'Контакты' },
-];
-
-const socialLinks = [
-  { name: 'Facebook', href: '#' },
-  { name: 'Instagram', href: '#' },
-  { name: 'Telegram', href: '#' },
+  { href: '/#about', label: 'О компании' },
+  { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#contact-form', label: 'Контакты' },
 ];
 
 export function Footer() {
@@ -28,11 +22,11 @@ export function Footer() {
   }, []);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (pathname === '/' && href.startsWith('#')) {
-      e.preventDefault();
-      const targetId = href.replace('#', '');
+    if (pathname === '/' && href.includes('#')) {
+      const targetId = href.split('#')[1];
       const element = document.getElementById(targetId);
       if (element) {
+        e.preventDefault();
         element.scrollIntoView({ behavior: 'smooth' });
         window.history.pushState(null, '', href);
       }
@@ -63,7 +57,7 @@ export function Footer() {
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link 
-                    href={pathname === '/' ? link.href : `/${link.href}`} 
+                    href={link.href} 
                     onClick={(e) => handleLinkClick(e, link.href)}
                     className="text-base text-muted-foreground hover:text-foreground"
                   >
@@ -94,12 +88,18 @@ export function Footer() {
         <div className="mt-8 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">&copy; {currentYear || 2025} Shaffron Tour. Все права защищены.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
-            {socialLinks.map((link) => (
-              <Link key={link.name} href={link.href} className="text-muted-foreground hover:text-foreground">
-                <span className="sr-only">{link.name}</span>
+             <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <span className="sr-only">Facebook</span>
                 <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
               </Link>
-            ))}
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <span className="sr-only">Instagram</span>
+                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <span className="sr-only">Telegram</span>
+                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
+              </Link>
           </div>
         </div>
       </div>
