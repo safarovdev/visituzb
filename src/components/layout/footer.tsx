@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -21,6 +22,11 @@ const socialLinks = [
 
 export function Footer() {
   const pathname = usePathname();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (pathname === '/' && href.startsWith('#')) {
@@ -87,7 +93,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Shaffron Tour. Все права защищены.</p>
+          <p className="text-sm text-muted-foreground">&copy; {currentYear || 2025} Shaffron Tour. Все права защищены.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             {socialLinks.map((link) => (
               <Link key={link.name} href={link.href} className="text-muted-foreground hover:text-foreground">
