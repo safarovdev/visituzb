@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { Mail, Phone, MapPin, Mountain } from 'lucide-react';
 
 const navLinks = [
-  { href: '/tours', label: 'Подборка туров' },
-  { href: '/#custom-tour', label: 'Мой тур' },
-  { href: '/about', label: 'О компании' },
-  { href: '/reviews', label: 'Отзывы' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '#footer', label: 'Контакты' },
+  { href: '#tours', label: 'Подборка туров' },
+  { href: '#custom-tour', label: 'Мой тур' },
+  { href: '#about', label: 'О компании' },
+  { href: '#reviews', label: 'Отзывы' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#contact-form', label: 'Контакты' },
 ];
 
 const socialLinks = [
@@ -66,7 +66,6 @@ export function Footer() {
             {socialLinks.map((link) => (
               <Link key={link.name} href={link.href} className="text-muted-foreground hover:text-foreground">
                 <span className="sr-only">{link.name}</span>
-                {/* Placeholder for social icons */}
                 <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
               </Link>
             ))}

@@ -7,20 +7,18 @@ import { Menu, Mountain, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { href: '/tours', label: 'Подборка туров' },
-  { href: '/#custom-tour', label: 'Мой тур' },
-  { href: '/about', label: 'О компании' },
-  { href: '/reviews', label: 'Отзывы' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '#footer', label: 'Контакты' },
+  { href: '#tours', label: 'Подборка туров' },
+  { href: '#custom-tour', label: 'Мой тур' },
+  { href: '#about', label: 'О компании' },
+  { href: '#reviews', label: 'Отзывы' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#contact-form', label: 'Контакты' },
 ];
 
 export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
@@ -34,10 +32,7 @@ export function Header() {
             <Link
               key={href}
               href={href}
-              className={cn(
-                'transition-colors hover:text-foreground/80',
-                pathname === href ? 'text-foreground' : 'text-foreground/60'
-              )}
+              className="text-foreground/60 transition-colors hover:text-foreground"
               prefetch={false}
             >
               {label}
@@ -46,7 +41,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
             <Button asChild className="hidden md:flex">
-                <Link href="/contact">Связаться</Link>
+                <Link href="#contact-form">Связаться</Link>
             </Button>
             <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
@@ -78,7 +73,7 @@ export function Header() {
                     </Link>
                   ))}
                   <Button asChild size="lg" className="mt-4 text-xl px-12 py-6">
-                      <Link href="/contact" onClick={() => setMenuOpen(false)}>Связаться</Link>
+                      <Link href="#contact-form" onClick={() => setMenuOpen(false)}>Связаться</Link>
                   </Button>
                 </div>
               </SheetContent>
