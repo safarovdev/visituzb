@@ -24,8 +24,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-2xl">Телефон</h3>
-                  <a href="tel:+998901234567" className="text-muted-foreground hover:text-foreground">
-                    +998 (90) 123-45-67
+                  <a href="tel:+998997032900" className="text-muted-foreground hover:text-foreground">
+                    +998 (99) 703-29-00
                   </a>
                   <p className="text-sm text-muted-foreground">Доступны с 9:00 до 18:00</p>
                 </div>
@@ -36,8 +36,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-2xl">Электронная почта</h3>
-                  <a href="mailto:info@visituz.com" className="text-muted-foreground hover:text-foreground">
-                    info@visituz.com
+                  <a href="mailto:nigina10.02@gmail.com" className="text-muted-foreground hover:text-foreground">
+                    nigina10.02@gmail.com
                   </a>
                    <p className="text-sm text-muted-foreground">Отвечаем в течение 24 часов</p>
                 </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-2xl">Офис</h3>
                   <p className="text-muted-foreground">
-                    г. Ташкент, ул. Амира Темура, 1
+                    г. Бухара, ул. Мустакиллик, 46/4
                   </p>
                    <p className="text-sm text-muted-foreground">Приходите в гости на чашку чая</p>
                 </div>

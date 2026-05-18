@@ -73,15 +73,15 @@ export function Footer() {
             <div className="mt-4 space-y-4">
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-primary mt-1" />
-                <a href="tel:+998901234567" className="text-base text-muted-foreground hover:text-foreground">+998 (90) 123-45-67</a>
+                <a href="tel:+998997032900" className="text-base text-muted-foreground hover:text-foreground">+998 (99) 703-29-00</a>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-primary mt-1" />
-                <a href="mailto:info@visituz.com" className="text-base text-muted-foreground hover:text-foreground">info@visituz.com</a>
+                <a href="mailto:nigina10.02@gmail.com" className="text-base text-muted-foreground hover:text-foreground">nigina10.02@gmail.com</a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 text-primary mt-1" />
-                <p className="text-base text-muted-foreground">г. Ташкент, ул. Амира Темура, 1</p>
+                <p className="text-base text-muted-foreground">г. Бухара, ул. Мустакиллик, 46/4</p>
               </div>
             </div>
           </div>
