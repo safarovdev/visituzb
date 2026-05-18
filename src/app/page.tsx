@@ -1,14 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle, Check } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { tours } from '@/lib/tour-data';
-import { reviews } from '@/lib/reviews-data';
 import { teamMembers } from '@/lib/team-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TourCard } from '@/components/tour-card';
-import { ReviewCard } from '@/components/review-card';
 import { ContactForm } from '@/components/contact-form';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
@@ -176,22 +174,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Reviews Section */}
-      <section id="reviews" className="bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Отзывы наших клиентов</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {reviews.map((review) => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section id="faq" className="bg-secondary">
+      <section id="faq" className="bg-background">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-xl">
@@ -221,7 +205,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-form" className="bg-background">
+      <section id="contact-form" className="bg-secondary">
         <div className="container">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
             <div className="space-y-8">

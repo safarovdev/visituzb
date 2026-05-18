@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -12,7 +12,6 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 const navLinks = [
   { href: '#tours', label: 'Подборка туров' },
   { href: '#about', label: 'О компании' },
-  { href: '#reviews', label: 'Отзывы' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contact-form', label: 'Контакты' },
 ];
@@ -20,12 +19,11 @@ const navLinks = [
 export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     setMenuOpen(false);
     
-    if (pathname === '/') {
+    if (pathname === '/' && href.startsWith('#')) {
       e.preventDefault();
       const targetId = href.replace('#', '');
       const element = document.getElementById(targetId);

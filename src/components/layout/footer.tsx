@@ -9,7 +9,6 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 const navLinks = [
   { href: '#tours', label: 'Подборка туров' },
   { href: '#about', label: 'О компании' },
-  { href: '#reviews', label: 'Отзывы' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contact-form', label: 'Контакты' },
 ];
