@@ -1,12 +1,15 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Mail, Phone, MapPin, Mountain } from 'lucide-react';
 
 const navLinks = [
-  { href: '/#tours', label: 'Подборка туров' },
-  { href: '/#about', label: 'О компании' },
-  { href: '/#reviews', label: 'Отзывы' },
-  { href: '/#faq', label: 'FAQ' },
-  { href: '/#contact-form', label: 'Контакты' },
+  { href: '#tours', label: 'Подборка туров' },
+  { href: '#about', label: 'О компании' },
+  { href: '#reviews', label: 'Отзывы' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#contact-form', label: 'Контакты' },
 ];
 
 const socialLinks = [
@@ -16,6 +19,20 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const pathname = usePathname();
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (pathname === '/' && href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.replace('#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', href);
+      }
+    }
+  };
+
   return (
     <footer id="footer" className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -34,7 +51,11 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-base text-muted-foreground hover:text-foreground">
+                  <Link 
+                    href={pathname === '/' ? link.href : `/${link.href}`} 
+                    onClick={(e) => handleLinkClick(e, link.href)}
+                    className="text-base text-muted-foreground hover:text-foreground"
+                  >
                     {link.label}
                   </Link>
                 </li>

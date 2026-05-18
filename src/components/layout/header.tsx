@@ -1,25 +1,39 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { Menu, Mountain, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 
 const navLinks = [
-  { href: '/#tours', label: 'Подборка туров' },
-  { href: '/#about', label: 'О компании' },
-  { href: '/#reviews', label: 'Отзывы' },
-  { href: '/#faq', label: 'FAQ' },
-  { href: '/#contact-form', label: 'Контакты' },
+  { href: '#tours', label: 'Подборка туров' },
+  { href: '#about', label: 'О компании' },
+  { href: '#reviews', label: 'Отзывы' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#contact-form', label: 'Контакты' },
 ];
 
 export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     setMenuOpen(false);
+    
+    if (pathname === '/') {
+      e.preventDefault();
+      const targetId = href.replace('#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        // Update URL hash without reload
+        window.history.pushState(null, '', href);
+      }
+    }
   };
 
   return (
@@ -33,7 +47,8 @@ export function Header() {
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
-              href={href}
+              href={pathname === '/' ? href : `/${href}`}
+              onClick={(e) => handleLinkClick(e, href)}
               className="text-foreground/60 transition-colors hover:text-foreground"
               prefetch={false}
             >
@@ -43,7 +58,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
             <Button asChild className="hidden md:flex">
-                <Link href="/#contact-form">Связаться</Link>
+                <Link href="#contact-form" onClick={(e) => handleLinkClick(e, '#contact-form')}>Связаться</Link>
             </Button>
             <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
@@ -54,7 +69,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-full h-full p-0 flex flex-col">
                 <div className="container flex h-20 items-center justify-between border-b">
-                   <Link href="/" className="flex items-center gap-2" onClick={handleLinkClick}>
+                   <Link href="/" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
                       <Mountain className="h-6 w-6 text-primary" />
                       <span className="font-bold text-xl tracking-tighter">Shaffron Tour</span>
                     </Link>
@@ -67,15 +82,15 @@ export function Header() {
                   {navLinks.map(({ href, label }) => (
                     <Link
                       key={href}
-                      href={href}
+                      href={pathname === '/' ? href : `/${href}`}
                       className="text-3xl font-bold transition-colors hover:text-primary"
-                      onClick={handleLinkClick}
+                      onClick={(e) => handleLinkClick(e, href)}
                     >
                       {label}
                     </Link>
                   ))}
                   <Button asChild size="lg" className="mt-4 text-xl px-12 py-6">
-                      <Link href="/#contact-form" onClick={handleLinkClick}>Связаться</Link>
+                      <Link href="#contact-form" onClick={(e) => handleLinkClick(e, '#contact-form')}>Связаться</Link>
                   </Button>
                 </div>
               </SheetContent>

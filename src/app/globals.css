@@ -80,6 +80,7 @@
   }
   html {
     scroll-behavior: smooth !important;
+    scroll-padding-top: 5rem;
   }
   body {
     @apply bg-background text-foreground;
