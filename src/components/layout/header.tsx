@@ -10,8 +10,8 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 
 const navLinks = [
-  { href: '/#about', label: 'О компании' },
   { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#about', label: 'О компании' },
   { href: '/#faq', label: 'FAQ' },
   { href: '/#contact-form', label: 'Контакты' },
 ];
