@@ -1,4 +1,6 @@
-import { notFound } from 'next/navigation';
+'use client';
+
+import { use, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Check, CalendarDays } from 'lucide-react';
 import { tours } from '@/lib/tour-data';
@@ -6,15 +8,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollAnimation } from '@/components/scroll-animation';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
-export async function generateStaticParams() {
-  return tours.map((tour) => ({
-    slug: tour.slug,
-  }));
-}
-
-export default async function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
   const tour = tours.find((t) => t.slug === slug);
 
   if (!tour) {
@@ -24,59 +21,68 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
   return (
     <ScrollAnimation className="bg-background">
       <div className="container max-w-7xl py-12 md:py-20">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 items-start">
           <div className="lg:col-span-2">
-            <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-lg">
+            <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src={tour.image.imageUrl}
                 alt={tour.name}
                 fill
-                className="object-cover transition-transform duration-300 hover:scale-105"
+                className="object-cover transition-transform duration-500 hover:scale-105"
                 data-ai-hint={tour.image.imageHint}
                 sizes="(max-width: 1024px) 100vw, 67vw"
               />
             </div>
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">{tour.name}</h1>
-            <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <CalendarDays className="h-5 w-5 text-primary" />
-                <span>{tour.itinerary.length} дней</span>
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{tour.name}</h1>
+            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-muted-foreground">
+              <div className="flex items-center gap-2 text-lg">
+                <CalendarDays className="h-6 w-6 text-primary" />
+                <span>Продолжительность: {tour.itinerary.length} дней</span>
               </div>
             </div>
-            <div className="mt-8 prose prose-lg max-w-none text-foreground prose-headings:text-foreground">
-              <p>{tour.description}</p>
+            <div className="mt-10 space-y-8">
+              <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
+                {tour.description}
+              </div>
               
-              <h3 className="mt-10 font-semibold">Программа тура:</h3>
-              <ul className="space-y-4">
-                {tour.itinerary.map((step, index) => (
-                  <li key={index} className="flex items-start">
-                    <Check className="mr-4 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                    <span><strong>День {index + 1}:</strong> {step}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold">Программа тура:</h3>
+                <div className="space-y-4">
+                  {tour.itinerary.map((step, index) => (
+                    <div key={index} className="flex items-start bg-secondary/30 p-4 rounded-xl border border-border/50">
+                      <div className="flex-shrink-0 flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground font-bold text-sm mr-4">
+                        {index + 1}
+                      </div>
+                      <span className="text-lg">{step}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
           
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-primary/20 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-xl">Забронировать тур</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Оставьте заявку, и наши специалисты свяжутся с вами для уточнения всех деталей и подбора оптимальных условий.
-                  </p>
-                  <Button size="lg" className="w-full text-lg" asChild>
-                    <Link href="/#contact-form">Оставить заявку</Link>
-                  </Button>
-                  <p className="text-center text-xs text-muted-foreground">
-                    Мы свяжемся с вами в кратчайшие сроки.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="sticky top-24">
+              <Card className="border-primary/10 shadow-2xl overflow-hidden rounded-[2rem]">
+                <CardHeader className="bg-primary text-primary-foreground p-8">
+                  <CardTitle className="text-2xl">Забронировать тур</CardTitle>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground">
+                      Оставьте заявку, и наш специалист свяжется с вами для уточнения деталей и составления идеальной программы вашего путешествия.
+                    </p>
+                    <Button size="lg" className="w-full text-xl py-8 shadow-xl" asChild>
+                      <Link href="/#contact-form">Оставить заявку</Link>
+                    </Button>
+                    <div className="pt-4 border-t border-border flex flex-col items-center gap-2">
+                      <p className="text-xs text-muted-foreground uppercase tracking-widest">Бесплатная консультация</p>
+                      <p className="text-sm font-medium">Мы ответим в течение 15 минут</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
