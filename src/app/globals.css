@@ -79,11 +79,12 @@
     @apply border-border;
   }
   html {
+    font-size: 90%;
     scroll-behavior: smooth !important;
     scroll-padding-top: 5rem;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
   }
   section {
     @apply w-full py-12 md:py-20 lg:py-24;
