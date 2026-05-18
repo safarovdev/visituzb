@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { Check, User, CalendarDays, Tag } from 'lucide-react';
+import { Check, User, CalendarDays } from 'lucide-react';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,8 +12,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function TourDetailPage({ params }: { params: { slug: string } }) {
-  const tour = tours.find((t) => t.slug === params.slug);
+export default async function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const tour = tours.find((t) => t.slug === slug);
 
   if (!tour) {
     notFound();
@@ -48,7 +49,7 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
             <div className="mt-8 prose prose-lg max-w-none text-foreground prose-headings:text-foreground">
               <p>{tour.description}</p>
               
-              <h3 className="mt-10 font-semibold">Маршрут:</h3>
+              <h3 className="mt-10 font-semibold">Программа тура:</h3>
               <ul className="space-y-4">
                 {tour.itinerary.map((step, index) => (
                   <li key={index} className="flex items-start">
@@ -61,28 +62,23 @@ export default function TourDetailPage({ params }: { params: { slug: string } })
           </div>
           
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-primary/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="sticky top-24 border-primary/20 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl">Забронировать тур</CardTitle>
-                <div className="pt-2 text-3xl font-bold">
-                  ${tour.price}
-                  <span className="text-base font-normal text-muted-foreground"> / на человека</span>
+                <div className="pt-2 text-xl font-medium text-muted-foreground">
+                  Стоимость по запросу
                 </div>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4">
-                  <div>
-                    {/* Placeholder for form fields like name, email, number of people */}
-                    <div className="h-10 w-full rounded-md bg-secondary animate-pulse" />
-                  </div>
-                   <div>
-                    <div className="h-10 w-full rounded-md bg-secondary animate-pulse" />
-                  </div>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Расчет стоимости производится индивидуально нашими менеджерами.
+                  </p>
                   <Button size="lg" className="w-full text-lg">
-                    Отправить заявку
+                    Оставить заявку
                   </Button>
                   <p className="text-center text-xs text-muted-foreground">
-                    Нажимая кнопку, вы соглашаетесь с нашей политикой конфиденциальности.
+                    Мы свяжемся с вами в течение часа.
                   </p>
                 </form>
               </CardContent>

@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, User, Tag, ArrowRight } from 'lucide-react';
+import { MapPin, User, ArrowRight } from 'lucide-react';
 
 import type { Tour } from '@/lib/types';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 
 type TourCardProps = {
   tour: Tour;
@@ -41,11 +40,10 @@ export function TourCard({ tour }: TourCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex items-center justify-between p-6 pt-0">
-        {/* <div className="text-2xl font-bold">
-          ${tour.price}
-          <span className="text-sm font-normal text-muted-foreground">/чел</span>
-        </div> */}
-        <Button asChild variant="ghost" className="text-primary hover:text-primary">
+        <div className="text-sm font-medium text-muted-foreground italic">
+          Индивидуальный расчет
+        </div>
+        <Button asChild variant="ghost" className="text-primary hover:text-primary p-0">
           <Link href={`/tours/${tour.slug}`}>
             Подробнее <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
