@@ -24,11 +24,11 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <Mountain className="h-7 w-7 text-primary" />
-              <span className="text-xl font-bold tracking-tighter">Visit Uzbekistan</span>
+            <span className="text-xl font-bold tracking-tighter">Shaffron Tour</span>
             </Link>
-            <p className="mt-4 max-w-xs text-muted-foreground">
-              Ваш надежный партнер в путешествиях по солнечному Узбекистану.
-            </p>
+              <p className="mt-4 max-w-xs text-muted-foreground">
+                Ваш надежный партнер в путешествиях по Узбекистану с Shaffron Tour.
+              </p>
           </div>
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground">Навигация</h4>
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Visit Uzbekistan. Все права защищены.</p>
+          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Shaffron Tour. Все права защищены.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             {socialLinks.map((link) => (
               <Link key={link.name} href={link.href} className="text-muted-foreground hover:text-foreground">

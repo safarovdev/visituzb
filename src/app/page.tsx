@@ -76,9 +76,9 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
         </div>
         <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">Добавь в своё путешествие пряный аромат Востока.</h1>
+          <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">Shaffron Tour</h1>
           <p className="mt-6 max-w-4xl text-2xl text-white/90 md:text-3xl">
-            Исследуйте древние города, величественную архитектуру и богатое культурное наследие Узбекистана с нашими эксклюзивными турами.
+            Исследуйте Узбекистан с нашими эксклюзивными турами Shaffron Tour - откройте древние города, величественную архитектуру и богатое культурное наследие.
           </p>
           {/* <div className="mt-10">
             <Button size="lg" asChild className="text-xl px-10 py-8">
@@ -93,8 +93,8 @@ export default function HomePage() {
         <div className="container">
           <div className="mb-12 flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
             <div>
-              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Готовые туры</h2>
-              <p className="mt-2 text-xl text-muted-foreground">Самые популярные маршруты, проверенные временем.</p>
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Готовые туры Shaffron</h2>
+          <p className="mt-2 text-xl text-muted-foreground">Популярные маршруты Shaffron Tour, проверенные временем.</p>
             </div>
             <Button asChild variant="outline">
               <Link href="/tours">
@@ -112,9 +112,9 @@ export default function HomePage() {
 
       {/* Individual Tour Section */}
       <ScrollAnimation as="section" id="custom-tour" className="container text-center">
-        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Не нашли свой тур?</h2>
+        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Индивидуальные туры Shaffron</h2>
         <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-        Мы с радостью подберём и составим для вас индивидуальное путешествие, полностью учитывая ваши предпочтения.
+        Если вы не нашли подходящего тура, мы с радостью составим для вас индивидуальный маршрут по вашим пожеланиям.
         </p>
         <div className="mt-8">
           <Button size="lg" asChild className="text-lg">
@@ -188,9 +188,9 @@ export default function HomePage() {
       {/* Advantages Section */}
       <ScrollAnimation as="section" className="bg-secondary">
         <div className="container text-center">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Почему мы?</h2>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Почему выбирают Shaffron Tour</h2>
             <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-              Мы делаем каждое путешествие особенным для вас.
+              Мы делаем ваше путешествие с Shaffron Tour особенным и незабываемым.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {advantages.map((adv) => (

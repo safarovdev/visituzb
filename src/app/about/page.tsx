@@ -10,7 +10,7 @@ export default function AboutPage() {
     <ScrollAnimation>
       <div className="container max-w-6xl py-12 md:py-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">О компании "Visit Uzbekistan"</h1>
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">О компании "Shaffron Tour"</h1>
           <p className="mt-6 mx-auto max-w-3xl text-xl text-muted-foreground">
             Ваш надежный проводник в мир древних городов, великолепной архитектуры и несравненного гостеприимства солнечного Узбекистана.
           </p>

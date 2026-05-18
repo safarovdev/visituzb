@@ -5,7 +5,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Visit Uzbekistan',
+  title: 'Shaffron Tour',
   description: 'Незабываемые туры по солнечному Узбекистану. Откройте для себя древние города, великолепную архитектуру и гостеприимство Востока.',
 };
 
