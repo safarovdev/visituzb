@@ -1,8 +1,7 @@
 'use client';
 
-import { use, useEffect, useState } from 'react';
+import { use } from 'react';
 import Image from 'next/image';
-import { Check, CalendarDays } from 'lucide-react';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -34,12 +33,7 @@ export default function TourDetailPage({ params }: { params: Promise<{ slug: str
               />
             </div>
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{tour.name}</h1>
-            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-muted-foreground">
-              <div className="flex items-center gap-2 text-lg">
-                <CalendarDays className="h-6 w-6 text-primary" />
-                <span>Продолжительность: {tour.itinerary.length} дней</span>
-              </div>
-            </div>
+            
             <div className="mt-10 space-y-8">
               <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
                 {tour.description}
