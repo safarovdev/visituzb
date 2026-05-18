@@ -80,21 +80,6 @@ export default function HomePage() {
         </div>
       </ScrollAnimation>
 
-      {/* Featured Tours Section */}
-      <section id="tours" className="bg-secondary">
-        <div className="container">
-          <div className="mb-12 text-center md:text-left">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Популярные туры</h2>
-            <p className="mt-2 text-xl text-muted-foreground">Маршруты Shaffron Tour, проверенные временем.</p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {tours.map((tour) => (
-              <TourCard key={tour.id} tour={tour} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section id="about" className="bg-background overflow-hidden">
         <div className="container">
@@ -127,8 +112,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Featured Tours Section */}
+      <section id="tours" className="bg-secondary">
+        <div className="container">
+          <div className="mb-12 text-center md:text-left">
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Популярные туры</h2>
+            <p className="mt-2 text-xl text-muted-foreground">Маршруты Shaffron Tour, проверенные временем.</p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {tours.map((tour) => (
+              <TourCard key={tour.id} tour={tour} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Team Section */}
-      <section id="team" className="bg-secondary">
+      <section id="team" className="bg-background">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
@@ -152,7 +152,7 @@ export default function HomePage() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="bg-background">
+      <section id="gallery" className="bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold tracking-tight">Галерея моментов</h2>
@@ -175,7 +175,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="bg-secondary">
+      <section id="faq" className="bg-background">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-xl">
@@ -205,7 +205,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-form" className="bg-background">
+      <section id="contact-form" className="bg-secondary">
         <div className="container">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
             <div className="space-y-8">
