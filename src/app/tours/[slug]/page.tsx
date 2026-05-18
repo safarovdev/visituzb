@@ -70,8 +70,7 @@ export default function TourDetailPage({ params }: { params: Promise<{ slug: str
                       <Link href="/#contact-form">Оставить заявку</Link>
                     </Button>
                     <div className="pt-4 border-t border-border flex flex-col items-center gap-2">
-                      <p className="text-xs text-muted-foreground uppercase tracking-widest">Бесплатная консультация</p>
-                      <p className="text-sm font-medium">Мы ответим в течение 15 минут</p>
+                      <p className="text-sm font-medium">Свяжемся в ближайшее время</p>
                     </div>
                   </div>
                 </CardContent>
