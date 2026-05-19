@@ -3,115 +3,115 @@
     {
       "id": "hero-uzbekistan",
       "description": "Главное изображение - панорама Узбекистана",
-      "imageUrl": "/images/hero.jpg",
+      "imageUrl": "/gallery/hero.jpg",
       "imageHint": "uzbekistan landscape"
     },
     {
       "id": "about-main",
       "description": "Изображение для раздела О компании",
-      "imageUrl": "/images/about.jpg",
+      "imageUrl": "/gallery/about.jpg",
       "imageHint": "uzbekistan architecture"
     },
     {
       "id": "tour-samarkand",
       "description": "Самарканд - Регистан",
-      "imageUrl": "/images/samarkand.jpg",
+      "imageUrl": "/gallery/samarkand.jpg",
       "imageHint": "samarkand registan"
     },
     {
       "id": "tour-bukhara",
       "description": "Бухара - Минарет Калян",
-      "imageUrl": "/images/bukhara.jpg",
+      "imageUrl": "/gallery/bukhara.jpg",
       "imageHint": "bukhara minaret"
     },
     {
       "id": "tour-khiva",
       "description": "Хива - Ичан-Кала",
-      "imageUrl": "/images/khiva.jpg",
+      "imageUrl": "/gallery/khiva.jpg",
       "imageHint": "khiva city"
     },
     {
       "id": "tour-tashkent",
       "description": "Ташкент - современный город",
-      "imageUrl": "/images/tashkent.jpg",
+      "imageUrl": "/gallery/tashkent.jpg",
       "imageHint": "tashkent city"
     },
     {
       "id": "team-director",
       "description": "Акбар Исламов",
-      "imageUrl": "/images/team-1.jpg",
+      "imageUrl": "/gallery/team-1.jpg",
       "imageHint": "professional portrait"
     },
     {
       "id": "team-manager",
       "description": "Дильноза Азизова",
-      "imageUrl": "/images/team-2.jpg",
+      "imageUrl": "/gallery/team-2.jpg",
       "imageHint": "business woman"
     },
     {
       "id": "team-guide-1",
       "description": "Алишер Рахмонов",
-      "imageUrl": "/images/team-3.jpg",
+      "imageUrl": "/gallery/team-3.jpg",
       "imageHint": "smiling man"
     },
     {
       "id": "team-driver-1",
       "description": "Тимур Юсупов",
-      "imageUrl": "/images/team-4.jpg",
+      "imageUrl": "/gallery/team-4.jpg",
       "imageHint": "professional driver"
     },
     {
       "id": "gallery-1",
       "description": "Галерея 1",
-      "imageUrl": "/images/gallery-1.jpg",
+      "imageUrl": "/gallery/gallery-1.jpg",
       "imageHint": "khiva walls"
     },
     {
       "id": "gallery-2",
       "description": "Галерея 2",
-      "imageUrl": "/images/gallery-2.jpg",
+      "imageUrl": "/gallery/gallery-2.jpg",
       "imageHint": "uzbekistan market"
     },
     {
       "id": "gallery-3",
       "description": "Галерея 3",
-      "imageUrl": "/images/gallery-3.jpg",
+      "imageUrl": "/gallery/gallery-3.jpg",
       "imageHint": "mosaic pattern"
     },
     {
       "id": "gallery-4",
       "description": "Галерея 4",
-      "imageUrl": "/images/gallery-4.jpg",
+      "imageUrl": "/gallery/gallery-4.jpg",
       "imageHint": "uzbek food"
     },
     {
       "id": "gallery-5",
       "description": "Галерея 5",
-      "imageUrl": "/images/gallery-5.jpg",
+      "imageUrl": "/gallery/gallery-5.jpg",
       "imageHint": "samarkand mosque"
     },
     {
       "id": "gallery-6",
       "description": "Галерея 6",
-      "imageUrl": "/images/gallery-6.jpg",
+      "imageUrl": "/gallery/gallery-6.jpg",
       "imageHint": "mountains"
     },
     {
       "id": "gallery-7",
       "description": "Галерея 7",
-      "imageUrl": "/images/gallery-7.jpg",
+      "imageUrl": "/gallery/gallery-7.jpg",
       "imageHint": "silk fabric"
     },
     {
       "id": "gallery-8",
       "description": "Галерея 8",
-      "imageUrl": "/images/gallery-8.jpg",
+      "imageUrl": "/gallery/gallery-8.jpg",
       "imageHint": "pottery"
     },
     {
       "id": "faq-side",
       "description": "Изображение для раздела FAQ",
-      "imageUrl": "/images/faq.jpg",
+      "imageUrl": "/gallery/faq.jpg",
       "imageHint": "uzbekistan pattern"
     }
   ]
