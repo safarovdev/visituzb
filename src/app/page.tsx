@@ -19,7 +19,6 @@ import { ScrollAnimation } from '@/components/scroll-animation';
 const getImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    // Возвращаем пустой объект-заглушку вместо ошибки, чтобы сервер не падал
     return {
       id,
       imageUrl: '',
@@ -171,6 +170,23 @@ export default function HomePage() {
               <TourCard key={tour.id} tour={tour} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Custom Tour CTA */}
+      <section className="bg-background text-center">
+        <div className="container">
+          <ScrollAnimation>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Не нашли свой тур?</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
+              Мы с радостью подберём и составим для вас индивидуальное путешествие, полностью учитывая ваши предпочтения.
+            </p>
+            <div className="mt-8">
+              <Button size="lg" asChild className="text-lg px-10 py-6">
+                <Link href="#contact-form">Заказать индивидуальный тур</Link>
+              </Button>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
