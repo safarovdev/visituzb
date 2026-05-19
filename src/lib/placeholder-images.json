@@ -2,129 +2,117 @@
   "placeholderImages": [
     {
       "id": "hero-uzbekistan",
-      "description": "Величественный Регистан в Самарканде на закате.",
-      "imageUrl": "https://images.unsplash.com/photo-1636308625150-79a17ded193d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYW1hcmthbmQlMjByZWdpc3RhbnxlbnwwfHx8fDE3Njk2MTMxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "samarkand registan"
+      "description": "Главное изображение - панорама Узбекистана",
+      "imageUrl": "https://images.unsplash.com/photo-1636308625150-79a17ded193d?q=80&w=1080",
+      "imageHint": "uzbekistan landscape"
+    },
+    {
+      "id": "about-main",
+      "description": "Изображение для раздела О компании",
+      "imageUrl": "https://images.unsplash.com/photo-1715540335591-8c7db66f7a41?q=80&w=1080",
+      "imageHint": "uzbekistan architecture"
     },
     {
       "id": "tour-samarkand",
-      "description": "Архитектурный ансамбль Шахи-Зинда в Самарканде.",
-      "imageUrl": "https://images.unsplash.com/photo-1715540335601-80fa7a03024a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzYW1hcmthbmQlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY5NjE3NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "samarkand architecture"
+      "description": "Самарканд - Регистан",
+      "imageUrl": "https://images.unsplash.com/photo-1636308625150-79a17ded193d?q=80&w=1080",
+      "imageHint": "samarkand registan"
     },
     {
       "id": "tour-bukhara",
-      "description": "Минарет Калян в Бухаре, символ города.",
-      "imageUrl": "https://images.unsplash.com/photo-1601963251218-816ff32e2baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidWtoYXJhJTIwbWluYXJldHxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Бухара - Минарет Калян",
+      "imageUrl": "https://images.unsplash.com/photo-1601963251218-816ff32e2baf?q=80&w=1080",
       "imageHint": "bukhara minaret"
     },
     {
       "id": "tour-khiva",
-      "description": "Древний город Ичан-Кала в Хиве.",
-      "imageUrl": "https://images.unsplash.com/photo-1756107778840-c5862cf1aa9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraGl2YSUyMGNpdHl8ZW58MHx8fHwxNzY5NjE3NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Хива - Ичан-Кала",
+      "imageUrl": "https://images.unsplash.com/photo-1756107778840-c5862cf1aa9e?q=80&w=1080",
       "imageHint": "khiva city"
     },
     {
       "id": "tour-tashkent",
-      "description": "Станция метро в Ташкенте, известная своим уникальным дизайном.",
-      "imageUrl": "https://images.unsplash.com/photo-1659469688035-d4381fd67b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0YXNoa2VudCUyMG1ldHJvfGVufDB8fHx8MTc2OTYxNzQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tashkent metro"
+      "description": "Ташкент - Метро или современный город",
+      "imageUrl": "https://images.unsplash.com/photo-1659469688035-d4381fd67b8f?q=80&w=1080",
+      "imageHint": "tashkent city"
     },
     {
       "id": "team-director",
-      "description": "Портрет директора компании.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk1NTAwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Акбар Исламов",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1080",
       "imageHint": "professional portrait"
     },
     {
       "id": "team-manager",
-      "description": "Портрет тур-менеджера.",
-      "imageUrl": "https://images.unsplash.com/photo-1635399191050-8d9189953ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnJpZW5kbHklMjBwZXJzb258ZW58MHx8fHwxNzY5NjE1OTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "friendly person"
+      "description": "Дильноза Азизова",
+      "imageUrl": "https://images.unsplash.com/photo-1635399191050-8d9189953ac2?q=80&w=1080",
+      "imageHint": "business woman"
     },
     {
       "id": "team-guide-1",
-      "description": "Портрет опытного гида.",
-      "imageUrl": "https://images.unsplash.com/photo-1507617470622-e254a32975d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzbWlsaW5nJTIwZ3VpZGV8ZW58MHx8fHwxNzY5NjE1OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smiling guide"
+      "description": "Алишер Рахмонов",
+      "imageUrl": "https://images.unsplash.com/photo-1507617470622-e254a32975d8?q=80&w=1080",
+      "imageHint": "smiling man"
     },
     {
       "id": "team-driver-1",
-      "description": "Портрет профессионального водителя.",
-      "imageUrl": "https://images.unsplash.com/photo-1692455546765-b7b6849ac9ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwZHJpdmVyfGVufDB8fHx8MTc2OTYxNTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Тимур Юсупов",
+      "imageUrl": "https://images.unsplash.com/photo-1692455546765-b7b6849ac9ce?q=80&w=1080",
       "imageHint": "professional driver"
     },
     {
       "id": "gallery-1",
-      "description": "Древние стены города Хива.",
-      "imageUrl": "https://images.unsplash.com/photo-1505779363118-944d5fd75b15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2hpdmElMjB3YWxsc3xlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Галерея 1",
+      "imageUrl": "https://images.unsplash.com/photo-1505779363118-944d5fd75b15?q=80&w=1080",
       "imageHint": "khiva walls"
     },
     {
       "id": "gallery-2",
-      "description": "Яркий восточный базар с традиционным хлебом и специями.",
-      "imageUrl": "https://images.unsplash.com/photo-1718810613119-c0c4d234e5c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1emJla2lzdGFuJTIwbWFya2V0fGVufDB8fHx8MTc2OTYxNzQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Галерея 2",
+      "imageUrl": "https://images.unsplash.com/photo-1718810613119-c0c4d234e5c8?q=80&w=1080",
       "imageHint": "uzbekistan market"
     },
     {
       "id": "gallery-3",
-      "description": "Детальная, красочная мозаика на стене медресе.",
-      "imageUrl": "https://images.unsplash.com/photo-1695324346578-139108204cca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1emJla2lzdGFuJTIwbW9zYWljfGVufDB8fHx8MTc2OTYxMzEyMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "uzbekistan mosaic"
+      "description": "Галерея 3",
+      "imageUrl": "https://images.unsplash.com/photo-1695324346578-139108204cca?q=80&w=1080",
+      "imageHint": "mosaic pattern"
     },
     {
       "id": "gallery-4",
-      "description": "Аппетитная тарелка традиционного узбекского плова.",
-      "imageUrl": "https://images.unsplash.com/photo-1671048116858-e8ef69175b2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1emJla2lzdGFuJTIwZm9vZHxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "uzbekistan food"
+      "description": "Галерея 4",
+      "imageUrl": "https://images.unsplash.com/photo-1671048116858-e8ef69175b2d?q=80&w=1080",
+      "imageHint": "uzbek food"
     },
     {
       "id": "gallery-5",
-      "description": "Величественный вход в мечеть Биби-Ханым в Самарканде.",
-      "imageUrl": "https://images.unsplash.com/photo-1715540335591-8c7db66f7a41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW1hcmthbmQlMjBtb3NxdWV8ZW58MHx8fHwxNzY5NjE3NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Галерея 5",
+      "imageUrl": "https://images.unsplash.com/photo-1715540335591-8c7db66f7a41?q=80&w=1080",
       "imageHint": "samarkand mosque"
     },
     {
       "id": "gallery-6",
-      "description": "Захватывающий горный пейзаж в Узбекистане.",
-      "imageUrl": "https://images.unsplash.com/photo-1682252913872-2ec60d4b0818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1emJla2lzdGFuJTIwbW91bnRhaW5zfGVufDB8fHx8MTc2OTYxNzQ1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "uzbekistan mountains"
+      "description": "Галерея 6",
+      "imageUrl": "https://images.unsplash.com/photo-1682252913872-2ec60d4b0818?q=80&w=1080",
+      "imageHint": "mountains"
     },
     {
       "id": "gallery-7",
-      "description": "Красочные, традиционные узбекские ткани.",
-      "imageUrl": "https://images.unsplash.com/photo-1681999656602-bb4a2f4c284b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1emJla2lzdGFuJTIwZmFicmljfGVufDB8fHx8MTc2OTYxNzQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "uzbekistan fabric"
+      "description": "Галерея 7",
+      "imageUrl": "https://images.unsplash.com/photo-1681999656602-bb4a2f4c284b?q=80&w=1080",
+      "imageHint": "silk fabric"
     },
     {
       "id": "gallery-8",
-      "description": "Красивая расписная керамика ручной работы.",
-      "imageUrl": "https://images.unsplash.com/photo-1727354484577-d3adaca753fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1emJla2lzdGFuJTIwcG90dGVyeXxlbnwwfHx8fDE3Njk2MTc0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "uzbekistan pottery"
+      "description": "Галерея 8",
+      "imageUrl": "https://images.unsplash.com/photo-1727354484577-d3adaca753fd?q=80&w=1080",
+      "imageHint": "pottery"
     },
     {
-      "id": "review-avatar-1",
-      "description": "Портрет довольного клиента мужчины.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG1hbGV8ZW58MHx8fHwxNzcwMjE4MjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "male portrait"
-    },
-    {
-      "id": "review-avatar-2",
-      "description": "Портрет довольной клиентки женщины.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGZlbWFsZXxlbnwwfHx8fDE3NzAyMTgyNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "female portrait"
-    },
-    {
-      "id": "review-avatar-3",
-      "description": "Портрет улыбающегося клиента.",
-      "imageUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWlsaW5nJTIwbWFufGVufDB8fHx8MTc3MDIxODI1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smiling man"
-    },
-    {
-      "id": "review-avatar-4",
-      "description": "Портрет путешественницы.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc3MDIxODI1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "id": "faq-side",
+      "description": "Изображение для раздела FAQ",
+      "imageUrl": "https://images.unsplash.com/photo-1695324346578-139108204cca?q=80&w=1080",
+      "imageHint": "uzbekistan pattern"
     }
   ]
 }

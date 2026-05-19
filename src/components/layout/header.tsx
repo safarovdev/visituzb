@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -11,7 +12,9 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 
 const navLinks = [
   { href: '/#about', label: 'О компании' },
-  { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#tours', label: 'Туры' },
+  { href: '/#team', label: 'Команда' },
+  { href: '/#gallery', label: 'Галерея' },
   { href: '/#faq', label: 'FAQ' },
   { href: '/#contact-form', label: 'Контакты' },
 ];
@@ -47,13 +50,13 @@ export function Header() {
             priority
           />
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium absolute left-1/2 -translate-x-1/2">
+        <nav className="hidden xl:flex items-center gap-6 text-sm font-medium absolute left-1/2 -translate-x-1/2">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               onClick={(e) => handleLinkClick(e, href)}
-              className="text-foreground/60 transition-colors hover:text-foreground"
+              className="text-foreground/60 transition-colors hover:text-foreground whitespace-nowrap"
               prefetch={false}
             >
               {label}
@@ -66,7 +69,7 @@ export function Header() {
             </Button>
             <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="md:hidden">
+                <Button variant="outline" size="icon" className="xl:hidden">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Открыть меню</span>
                 </Button>
@@ -87,12 +90,12 @@ export function Header() {
                     </Button>
                 </div>
                 <SheetTitle className="sr-only">Навигация</SheetTitle>
-                <div className="flex-grow flex flex-col items-center justify-center gap-8">
+                <div className="flex-grow flex flex-col items-center justify-center gap-6">
                   {navLinks.map(({ href, label }) => (
                     <Link
                       key={href}
                       href={href}
-                      className="text-3xl font-bold transition-colors hover:text-primary"
+                      className="text-2xl font-bold transition-colors hover:text-primary"
                       onClick={(e) => handleLinkClick(e, href)}
                     >
                       {label}

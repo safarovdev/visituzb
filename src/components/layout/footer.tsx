@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -8,7 +9,9 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const navLinks = [
   { href: '/#about', label: 'О компании' },
-  { href: '/#tours', label: 'Подборка туров' },
+  { href: '/#tours', label: 'Туры' },
+  { href: '/#team', label: 'Команда' },
+  { href: '/#gallery', label: 'Галерея' },
   { href: '/#faq', label: 'FAQ' },
   { href: '/#contact-form', label: 'Контакты' },
 ];
@@ -48,7 +51,7 @@ export function Footer() {
               />
             </Link>
               <p className="mt-4 max-w-xs text-muted-foreground">
-                Ваш надежный партнер в путешествиях по Узбекистану с Shaffron Tour.
+                Ваш надежный партнер в путешествиях по Узбекистану с Shaffron Tour. Откройте для себя магию Востока.
               </p>
           </div>
           <div>
@@ -89,16 +92,12 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">&copy; {currentYear || 2025} Shaffron Tour. Все права защищены.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <span className="sr-only">Facebook</span>
-                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
+                <span className="sr-only">Telegram</span>
+                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full flex items-center justify-center text-[10px] font-bold">TG</div>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground">
                 <span className="sr-only">Instagram</span>
-                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <span className="sr-only">Telegram</span>
-                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full"></div>
+                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full flex items-center justify-center text-[10px] font-bold">IG</div>
               </Link>
           </div>
         </div>

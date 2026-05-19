@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
@@ -46,11 +47,11 @@ const faqs = [
 
 export default function HomePage() {
   const heroImage = getImage('hero-uzbekistan');
-  const aboutImage = getImage('gallery-5');
+  const aboutImage = getImage('about-main');
   const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-')).slice(0, 12);
-  const faqImage = getImage('gallery-3');
-  const contactImage1 = getImage('hero-uzbekistan');
-  const contactImage2 = getImage('tour-samarkand');
+  const faqImage = getImage('faq-side');
+  const contactImage1 = getImage('tour-samarkand');
+  const contactImage2 = getImage('tour-bukhara');
 
   return (
     <>
