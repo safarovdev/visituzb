@@ -63,73 +63,73 @@
     {
       "id": "gallery-1",
       "description": "Локация 1",
-      "imageUrl": "/gallery/g1.jpg",
+      "imageUrl": "/gallery/image-1.jpg",
       "imageHint": "uzbekistan view"
     },
     {
       "id": "gallery-2",
       "description": "Локация 2",
-      "imageUrl": "/gallery/g2.jpg",
+      "imageUrl": "/gallery/image-2.jpg",
       "imageHint": "uzbekistan street"
     },
     {
       "id": "gallery-3",
       "description": "Локация 3",
-      "imageUrl": "/gallery/g3.jpg",
+      "imageUrl": "/gallery/image-3.jpg",
       "imageHint": "mosaic"
     },
     {
       "id": "gallery-4",
       "description": "Локация 4",
-      "imageUrl": "/gallery/g4.jpg",
+      "imageUrl": "/gallery/image-4.jpg",
       "imageHint": "bazaar"
     },
     {
       "id": "gallery-5",
       "description": "Локация 5",
-      "imageUrl": "/gallery/g5.jpg",
+      "imageUrl": "/gallery/image-5.jpg",
       "imageHint": "mosque"
     },
     {
       "id": "gallery-6",
       "description": "Локация 6",
-      "imageUrl": "/gallery/g6.jpg",
+      "imageUrl": "/gallery/image-6.jpg",
       "imageHint": "mountains"
     },
     {
       "id": "gallery-7",
       "description": "Локация 7",
-      "imageUrl": "/gallery/g7.jpg",
+      "imageUrl": "/gallery/image-7.jpg",
       "imageHint": "pattern"
     },
     {
       "id": "gallery-8",
       "description": "Локация 8",
-      "imageUrl": "/gallery/g8.jpg",
+      "imageUrl": "/gallery/image-8.jpg",
       "imageHint": "ceramics"
     },
     {
       "id": "gallery-9",
       "description": "Локация 9",
-      "imageUrl": "/gallery/g9.jpg",
+      "imageUrl": "/gallery/image-9.jpg",
       "imageHint": "sunset"
     },
     {
       "id": "gallery-10",
       "description": "Локация 10",
-      "imageUrl": "/gallery/g10.jpg",
+      "imageUrl": "/gallery/image-10.jpg",
       "imageHint": "old town"
     },
     {
       "id": "gallery-11",
       "description": "Локация 11",
-      "imageUrl": "/gallery/g11.jpg",
+      "imageUrl": "/gallery/image-11.jpg",
       "imageHint": "caravan"
     },
     {
       "id": "gallery-12",
       "description": "Локация 12",
-      "imageUrl": "/gallery/g12.jpg",
+      "imageUrl": "/gallery/image-12.jpg",
       "imageHint": "dome"
     },
     {
