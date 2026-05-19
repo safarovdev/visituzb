@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Users, Award, ShieldCheck, Clock } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
@@ -107,6 +107,50 @@ export default function HomePage() {
                   data-ai-hint={aboutImage.imageHint}
                 />
             </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us Section */}
+      <section id="why-us" className="bg-secondary/30">
+        <div className="container">
+          <div className="text-center mb-16">
+            <ScrollAnimation>
+              <h2 className="text-4xl font-bold tracking-tight md:text-5xl mb-4">Почему мы?</h2>
+              <p className="text-xl text-muted-foreground">Мы делаем каждое путешествие особенным для вас.</p>
+            </ScrollAnimation>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: 'Индивидуальный подход',
+                desc: 'Мы создаем туры, которые подходят именно вам и вашим интересам.',
+                icon: <Users className="h-10 w-10 text-primary" />
+              },
+              {
+                title: 'Опытные гиды',
+                desc: 'Наши эксперты знают все секреты и легенды древних городов.',
+                icon: <Award className="h-10 w-10 text-primary" />
+              },
+              {
+                title: 'Гарантия качества',
+                desc: 'Мы заботимся о каждой детали, чтобы ваш отдых был безупречным.',
+                icon: <ShieldCheck className="h-10 w-10 text-primary" />
+              },
+              {
+                title: 'Поддержка 24/7',
+                desc: 'Мы всегда на связи, чтобы оперативно решить любой ваш вопрос.',
+                icon: <Clock className="h-10 w-10 text-primary" />
+              }
+            ].map((item, i) => (
+              <ScrollAnimation key={i} className="flex flex-col items-center text-center p-8 rounded-[2rem] bg-background border border-border/50 shadow-sm hover:shadow-md transition-shadow">
+                <div className="mb-6 p-4 bg-secondary/50 rounded-full">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
