@@ -37,30 +37,6 @@
       "imageHint": "tashkent city"
     },
     {
-      "id": "team-director",
-      "description": "Акбар Исламов",
-      "imageUrl": "/gallery/team1.jpg",
-      "imageHint": "professional portrait"
-    },
-    {
-      "id": "team-manager",
-      "description": "Дильноза Азизова",
-      "imageUrl": "/gallery/team2.jpg",
-      "imageHint": "business woman"
-    },
-    {
-      "id": "team-guide-1",
-      "description": "Алишер Рахмонов",
-      "imageUrl": "/gallery/team3.jpg",
-      "imageHint": "smiling man"
-    },
-    {
-      "id": "team-driver-1",
-      "description": "Тимур Юсупов",
-      "imageUrl": "/gallery/team4.jpg",
-      "imageHint": "professional driver"
-    },
-    {
       "id": "gallery-1",
       "description": "Локация 1",
       "imageUrl": "/gallery/image-1.jpg",

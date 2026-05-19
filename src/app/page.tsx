@@ -4,12 +4,10 @@ import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { tours } from '@/lib/tour-data';
-import { teamMembers } from '@/lib/team-data';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TourCard } from '@/components/tour-card';
 import { ContactForm } from '@/components/contact-form';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Accordion,
   AccordionItem,
@@ -123,30 +121,6 @@ export default function HomePage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {tours.map((tour) => (
               <TourCard key={tour.id} tour={tour} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section id="team" className="bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Наша команда</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-              Профессионалы, которые сделают ваше путешествие незабываемым.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-            {teamMembers.map((member) => (
-                <div key={member.id} className="text-center">
-                  <Avatar className="mx-auto h-40 w-40 shadow-lg transition-transform duration-300 hover:scale-110">
-                    <AvatarImage src={member.image.imageUrl} alt={member.name} data-ai-hint={member.image.imageHint}/>
-                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                  <h3 className="mt-6 text-2xl font-semibold">{member.name}</h3>
-                  <p className="text-primary font-medium text-lg">{member.role}</p>
-                </div>
             ))}
           </div>
         </div>

@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from './placeholder-images';
 
 export type Tour = {
@@ -6,13 +7,6 @@ export type Tour = {
   name: string;
   description: string;
   itinerary: string[];
-  image: ImagePlaceholder;
-};
-
-export type TeamMember = {
-  id: string;
-  name: string;
-  role: string;
   image: ImagePlaceholder;
 };
 

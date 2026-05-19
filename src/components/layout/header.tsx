@@ -13,7 +13,6 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 export const navLinks = [
   { href: '/#about', label: 'О компании' },
   { href: '/#tours', label: 'Туры' },
-  { href: '/#team', label: 'Команда' },
   { href: '/#gallery', label: 'Галерея' },
   { href: '/#faq', label: 'FAQ' },
   { href: '/#contact-form', label: 'Контакты' },
