@@ -1,6 +1,9 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight, Loader2 } from 'lucide-react';
 
 import type { Tour } from '@/lib/types';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,6 +14,8 @@ type TourCardProps = {
 };
 
 export function TourCard({ tour }: TourCardProps) {
+  const [isNavigating, setIsNavigating] = useState(false);
+
   return (
     <Card className="group flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardHeader className="p-0">
@@ -36,8 +41,16 @@ export function TourCard({ tour }: TourCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex items-center justify-end p-6 pt-0">
-        <Button asChild variant="ghost" className="text-primary hover:text-primary p-0">
+        <Button 
+          asChild 
+          variant="ghost" 
+          className="text-primary hover:text-primary p-0"
+          onClick={() => setIsNavigating(true)}
+        >
           <Link href={`/tours/${tour.slug}`}>
+            {isNavigating ? (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            ) : null}
             Подробнее <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>

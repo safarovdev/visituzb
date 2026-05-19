@@ -1,6 +1,6 @@
 'use client';
 
-import { use } from 'react';
+import { use, useState } from 'react';
 import Image from 'next/image';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
@@ -8,9 +8,11 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollAnimation } from '@/components/scroll-animation';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { Loader2 } from 'lucide-react';
 
 export default function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
+  const [isNavigating, setIsNavigating] = useState(false);
   const tour = tours.find((t) => t.slug === slug);
 
   if (!tour) {
@@ -66,8 +68,16 @@ export default function TourDetailPage({ params }: { params: Promise<{ slug: str
                     <p className="text-muted-foreground">
                       Оставьте заявку, и наш специалист свяжется с вами для уточнения деталей и составления идеальной программы вашего путешествия.
                     </p>
-                    <Button size="lg" className="w-full text-xl py-8 shadow-xl" asChild>
-                      <Link href="/#contact-form">Оставить заявку</Link>
+                    <Button 
+                      size="lg" 
+                      className="w-full text-xl py-8 shadow-xl" 
+                      asChild
+                      onClick={() => setIsNavigating(true)}
+                    >
+                      <Link href="/#contact-form">
+                        {isNavigating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+                        Оставить заявку
+                      </Link>
                     </Button>
                     <div className="pt-4 border-t border-border flex flex-col items-center gap-2">
                       <p className="text-sm font-medium">Свяжемся в ближайшее время</p>
