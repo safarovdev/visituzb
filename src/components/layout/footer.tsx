@@ -36,14 +36,14 @@ export function Footer() {
             <Link href="/" className="flex items-center">
               <Image 
                 src="https://i.postimg.cc/HLNrd3jV/Shaffron-Tour.png" 
-                alt="Shaffron Tour Logo" 
+                alt="Saffron Tour Logo" 
                 width={200} 
                 height={60} 
                 className="h-14 w-auto object-contain"
               />
             </Link>
               <p className="mt-4 max-w-xs text-muted-foreground">
-                Ваш надежный партнер в путешествиях по Узбекистану с Shaffron Tour. Откройте для себя магию Востока.
+                Ваш надежный партнер в путешествиях по Узбекистану с Saffron Tour. Откройте для себя магию Востока.
               </p>
           </div>
           <div>
@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">&copy; {currentYear || 2025} Shaffron Tour. Все права защищены.</p>
+          <p className="text-sm text-muted-foreground">&copy; {currentYear || 2025} Saffron Tour. Все права защищены.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
              <Link href="#" className="text-muted-foreground hover:text-foreground">
                 <span className="sr-only">Telegram</span>

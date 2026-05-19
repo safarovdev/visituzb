@@ -67,7 +67,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">Shaffron Tour</h1>
+          <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">Saffron Tour</h1>
           <p className="mt-6 max-w-4xl text-2xl text-white/90 md:text-3xl">
             Исследуйте Узбекистан с нашими эксклюзивными турами. Откройте древние города, величественную архитектуру и богатое культурное наследие.
           </p>
@@ -84,7 +84,7 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="space-y-6">
-              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">О компании Shaffron Tour</h2>
+              <h2 className="text-4xl font-bold tracking-tight md:text-5xl">О компании Saffron Tour</h2>
               <p className="text-xl text-muted-foreground">
                 Ваш надежный проводник в мир древних городов, великолепной архитектуры и несравненного гостеприимства солнечного Узбекистана.
               </p>
@@ -154,7 +154,7 @@ export default function HomePage() {
         <div className="container">
           <div className="mb-12 text-center md:text-left">
             <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Популярные туры</h2>
-            <p className="mt-2 text-xl text-muted-foreground">Маршруты Shaffron Tour, проверенные временем.</p>
+            <p className="mt-2 text-xl text-muted-foreground">Маршруты Saffron Tour, проверенные временем.</p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {tours.map((tour) => (

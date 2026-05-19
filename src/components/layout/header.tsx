@@ -43,7 +43,7 @@ export function Header() {
         <Link href="/" className="flex items-center" prefetch={false}>
           <Image 
             src="https://i.postimg.cc/HLNrd3jV/Shaffron-Tour.png" 
-            alt="Shaffron Tour Logo" 
+            alt="Saffron Tour Logo" 
             width={180} 
             height={50} 
             className="h-12 w-auto object-contain"
@@ -79,7 +79,7 @@ export function Header() {
                    <Link href="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
                       <Image 
                         src="https://i.postimg.cc/HLNrd3jV/Shaffron-Tour.png" 
-                        alt="Shaffron Tour Logo" 
+                        alt="Saffron Tour Logo" 
                         width={180} 
                         height={50} 
                         className="h-12 w-auto object-contain"
