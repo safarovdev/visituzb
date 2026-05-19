@@ -86,16 +86,6 @@ export function Footer() {
             <p className="hidden sm:block">|</p>
             <p>Фотографии: <span className="font-medium text-foreground">Ника Дмитриева</span></p>
           </div>
-          <div className="flex space-x-6">
-             <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <span className="sr-only">Telegram</span>
-                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full flex items-center justify-center text-[10px] font-bold">TG</div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <span className="sr-only">Instagram</span>
-                <div className="h-6 w-6 bg-muted-foreground/20 rounded-full flex items-center justify-center text-[10px] font-bold">IG</div>
-              </Link>
-          </div>
         </div>
       </div>
     </footer>
