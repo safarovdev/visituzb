@@ -19,7 +19,13 @@ import { ScrollAnimation } from '@/components/scroll-animation';
 const getImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    throw new Error(`Image with id ${id} not found`);
+    // Возвращаем пустой объект-заглушку вместо ошибки, чтобы сервер не падал
+    return {
+      id,
+      imageUrl: '',
+      description: '',
+      imageHint: ''
+    };
   }
   return image;
 };
@@ -46,7 +52,7 @@ const faqs = [
 export default function HomePage() {
   const heroImage = getImage('hero-uzbekistan');
   const aboutImage = getImage('about-main');
-  const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-')).slice(0, 12);
+  const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-') || p.id.startsWith('image-')).slice(0, 12);
   const faqImage = getImage('faq-side');
   const contactImage1 = getImage('tour-samarkand');
   const contactImage2 = getImage('tour-bukhara');
@@ -56,14 +62,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <ScrollAnimation as="section" className="relative h-[90vh] w-full pt-0">
         <div className="absolute inset-0 z-0">
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
+          {heroImage.imageUrl && (
+            <Image
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              fill
+              className="object-cover"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
@@ -98,13 +106,15 @@ export default function HomePage() {
               </div>
             </ScrollAnimation>
             <ScrollAnimation className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl">
-               <Image
-                  src={aboutImage.imageUrl}
-                  alt={aboutImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={aboutImage.imageHint}
-                />
+               {aboutImage.imageUrl && (
+                 <Image
+                    src={aboutImage.imageUrl}
+                    alt={aboutImage.description}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={aboutImage.imageHint}
+                  />
+               )}
             </ScrollAnimation>
           </div>
         </div>
@@ -173,14 +183,16 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {galleryImages.map((img, index) => (
               <div key={img.id} className={`relative aspect-square overflow-hidden rounded-2xl shadow-lg ${index === 0 || index === 5 ? 'md:col-span-2 md:row-span-2' : ''}`}>
-                 <Image
-                    src={img.imageUrl}
-                    alt={img.description}
-                    fill
-                    className="object-cover transition-transform hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    data-ai-hint={img.imageHint}
-                  />
+                 {img.imageUrl && (
+                   <Image
+                      src={img.imageUrl}
+                      alt={img.description}
+                      fill
+                      className="object-cover transition-transform hover:scale-105"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      data-ai-hint={img.imageHint}
+                    />
+                 )}
               </div>
             ))}
           </div>
@@ -192,13 +204,15 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-xl">
-              <Image
-                src={faqImage.imageUrl}
-                alt={faqImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={faqImage.imageHint}
-              />
+              {faqImage.imageUrl && (
+                <Image
+                  src={faqImage.imageUrl}
+                  alt={faqImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={faqImage.imageHint}
+                />
+              )}
             </ScrollAnimation>
             <div>
               <h2 className="text-4xl font-bold tracking-tight mb-8">Часто задаваемые вопросы</h2>
@@ -228,20 +242,24 @@ export default function HomePage() {
               </p>
               <div className="relative h-96 w-full max-w-lg lg:h-[450px]">
                 <div className="absolute top-0 left-0 w-3/5 h-3/5 -rotate-6">
-                  <Image
-                    src={contactImage1.imageUrl}
-                    alt={contactImage1.description}
-                    fill
-                    className="rounded-2xl object-cover shadow-2xl"
-                  />
+                  {contactImage1.imageUrl && (
+                    <Image
+                      src={contactImage1.imageUrl}
+                      alt={contactImage1.description}
+                      fill
+                      className="rounded-2xl object-cover shadow-2xl"
+                    />
+                  )}
                 </div>
                 <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rotate-3">
-                  <Image
-                    src={contactImage2.imageUrl}
-                    alt={contactImage2.description}
-                    fill
-                    className="rounded-2xl object-cover shadow-2xl"
-                  />
+                  {contactImage2.imageUrl && (
+                    <Image
+                      src={contactImage2.imageUrl}
+                      alt={contactImage2.description}
+                      fill
+                      className="rounded-2xl object-cover shadow-2xl"
+                    />
+                  )}
                 </div>
               </div>
             </div>

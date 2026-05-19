@@ -1,10 +1,17 @@
+
 import type { Tour } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
 const getImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    throw new Error(`Image with id ${id} not found`);
+    // Возвращаем заглушку, чтобы данные туров не ломали приложение при отсутствии ID в JSON
+    return {
+      id,
+      imageUrl: '',
+      description: '',
+      imageHint: ''
+    };
   }
   return image;
 };
