@@ -27,7 +27,7 @@ const getImage = (id: string) => {
 const faqs = [
   {
     question: "Какое лучшее время для посещения Узбекистана?",
-    answer: "Лучшее время для поездки в Узбекистан - весна (с марта по май) и осень (с сентября по ноябрь). В это время погода наиболее комфортная для экскурсий и прогулок."
+    answer: "Лучшее время для поездки в Узбекистан — весна (с марта по май) и осень (с сентября по ноябрь). В это время погода наиболее комфортная для экскурсий и прогулок."
   },
   {
     question: "Нужна ли мне виза?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "Какая валюта используется в Узбекистане?",
-    answer: "Национальная валюта - узбекский сум (UZS). Обменять валюту можно в банках и официальных обменных пунктах."
+    answer: "Национальная валюта — узбекский сум (UZS). Обменять валюту можно в банках и официальных обменных пунктах."
   },
   {
     question: "Как узнать стоимость тура?",
@@ -127,7 +127,7 @@ export default function HomePage() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="bg-secondary">
+      <section id="gallery" className="bg-background">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold tracking-tight">Галерея моментов</h2>
@@ -150,7 +150,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="bg-background">
+      <section id="faq" className="bg-secondary">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollAnimation className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-xl">
@@ -180,7 +180,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-form" className="bg-secondary">
+      <section id="contact-form" className="bg-background">
         <div className="container">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
             <div className="space-y-8">
