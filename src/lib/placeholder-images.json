@@ -3,115 +3,115 @@
     {
       "id": "hero-uzbekistan",
       "description": "Главное изображение - панорама Узбекистана",
-      "imageUrl": "https://images.unsplash.com/photo-1636308625150-79a17ded193d?q=80&w=1080",
+      "imageUrl": "/images/hero.jpg",
       "imageHint": "uzbekistan landscape"
     },
     {
       "id": "about-main",
       "description": "Изображение для раздела О компании",
-      "imageUrl": "https://images.unsplash.com/photo-1715540335591-8c7db66f7a41?q=80&w=1080",
+      "imageUrl": "/images/about.jpg",
       "imageHint": "uzbekistan architecture"
     },
     {
       "id": "tour-samarkand",
       "description": "Самарканд - Регистан",
-      "imageUrl": "https://images.unsplash.com/photo-1636308625150-79a17ded193d?q=80&w=1080",
+      "imageUrl": "/images/samarkand.jpg",
       "imageHint": "samarkand registan"
     },
     {
       "id": "tour-bukhara",
       "description": "Бухара - Минарет Калян",
-      "imageUrl": "https://images.unsplash.com/photo-1601963251218-816ff32e2baf?q=80&w=1080",
+      "imageUrl": "/images/bukhara.jpg",
       "imageHint": "bukhara minaret"
     },
     {
       "id": "tour-khiva",
       "description": "Хива - Ичан-Кала",
-      "imageUrl": "https://images.unsplash.com/photo-1756107778840-c5862cf1aa9e?q=80&w=1080",
+      "imageUrl": "/images/khiva.jpg",
       "imageHint": "khiva city"
     },
     {
       "id": "tour-tashkent",
-      "description": "Ташкент - Метро или современный город",
-      "imageUrl": "https://images.unsplash.com/photo-1659469688035-d4381fd67b8f?q=80&w=1080",
+      "description": "Ташкент - современный город",
+      "imageUrl": "/images/tashkent.jpg",
       "imageHint": "tashkent city"
     },
     {
       "id": "team-director",
       "description": "Акбар Исламов",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1080",
+      "imageUrl": "/images/team-1.jpg",
       "imageHint": "professional portrait"
     },
     {
       "id": "team-manager",
       "description": "Дильноза Азизова",
-      "imageUrl": "https://images.unsplash.com/photo-1635399191050-8d9189953ac2?q=80&w=1080",
+      "imageUrl": "/images/team-2.jpg",
       "imageHint": "business woman"
     },
     {
       "id": "team-guide-1",
       "description": "Алишер Рахмонов",
-      "imageUrl": "https://images.unsplash.com/photo-1507617470622-e254a32975d8?q=80&w=1080",
+      "imageUrl": "/images/team-3.jpg",
       "imageHint": "smiling man"
     },
     {
       "id": "team-driver-1",
       "description": "Тимур Юсупов",
-      "imageUrl": "https://images.unsplash.com/photo-1692455546765-b7b6849ac9ce?q=80&w=1080",
+      "imageUrl": "/images/team-4.jpg",
       "imageHint": "professional driver"
     },
     {
       "id": "gallery-1",
       "description": "Галерея 1",
-      "imageUrl": "https://images.unsplash.com/photo-1505779363118-944d5fd75b15?q=80&w=1080",
+      "imageUrl": "/images/gallery-1.jpg",
       "imageHint": "khiva walls"
     },
     {
       "id": "gallery-2",
       "description": "Галерея 2",
-      "imageUrl": "https://images.unsplash.com/photo-1718810613119-c0c4d234e5c8?q=80&w=1080",
+      "imageUrl": "/images/gallery-2.jpg",
       "imageHint": "uzbekistan market"
     },
     {
       "id": "gallery-3",
       "description": "Галерея 3",
-      "imageUrl": "https://images.unsplash.com/photo-1695324346578-139108204cca?q=80&w=1080",
+      "imageUrl": "/images/gallery-3.jpg",
       "imageHint": "mosaic pattern"
     },
     {
       "id": "gallery-4",
       "description": "Галерея 4",
-      "imageUrl": "https://images.unsplash.com/photo-1671048116858-e8ef69175b2d?q=80&w=1080",
+      "imageUrl": "/images/gallery-4.jpg",
       "imageHint": "uzbek food"
     },
     {
       "id": "gallery-5",
       "description": "Галерея 5",
-      "imageUrl": "https://images.unsplash.com/photo-1715540335591-8c7db66f7a41?q=80&w=1080",
+      "imageUrl": "/images/gallery-5.jpg",
       "imageHint": "samarkand mosque"
     },
     {
       "id": "gallery-6",
       "description": "Галерея 6",
-      "imageUrl": "https://images.unsplash.com/photo-1682252913872-2ec60d4b0818?q=80&w=1080",
+      "imageUrl": "/images/gallery-6.jpg",
       "imageHint": "mountains"
     },
     {
       "id": "gallery-7",
       "description": "Галерея 7",
-      "imageUrl": "https://images.unsplash.com/photo-1681999656602-bb4a2f4c284b?q=80&w=1080",
+      "imageUrl": "/images/gallery-7.jpg",
       "imageHint": "silk fabric"
     },
     {
       "id": "gallery-8",
       "description": "Галерея 8",
-      "imageUrl": "https://images.unsplash.com/photo-1727354484577-d3adaca753fd?q=80&w=1080",
+      "imageUrl": "/images/gallery-8.jpg",
       "imageHint": "pottery"
     },
     {
       "id": "faq-side",
       "description": "Изображение для раздела FAQ",
-      "imageUrl": "https://images.unsplash.com/photo-1695324346578-139108204cca?q=80&w=1080",
+      "imageUrl": "/images/faq.jpg",
       "imageHint": "uzbekistan pattern"
     }
   ]
