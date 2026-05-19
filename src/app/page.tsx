@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle, Users, Award, ShieldCheck, Clock } from 'lucide-react';
+import { CheckCircle, Users, Award, ShieldCheck } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { tours } from '@/lib/tour-data';
 import { Button } from '@/components/ui/button';
@@ -94,7 +94,6 @@ export default function HomePage() {
                   <li className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-primary" /> 10+ лет опыта</li>
                   <li className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-primary" /> 5000+ туристов</li>
                   <li className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-primary" /> Рейтинг 4.9/5</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-primary" /> Поддержка 24/7</li>
                 </ul>
               </div>
             </ScrollAnimation>
@@ -120,7 +119,7 @@ export default function HomePage() {
               <p className="text-xl text-muted-foreground">Мы делаем каждое путешествие особенным для вас.</p>
             </ScrollAnimation>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: 'Индивидуальный подход',
@@ -136,11 +135,6 @@ export default function HomePage() {
                 title: 'Гарантия качества',
                 desc: 'Мы заботимся о каждой детали, чтобы ваш отдых был безупречным.',
                 icon: <ShieldCheck className="h-10 w-10 text-primary" />
-              },
-              {
-                title: 'Поддержка 24/7',
-                desc: 'Мы всегда на связи, чтобы оперативно решить любой ваш вопрос.',
-                icon: <Clock className="h-10 w-10 text-primary" />
               }
             ].map((item, i) => (
               <ScrollAnimation key={i} className="flex flex-col items-center text-center p-8 rounded-[2rem] bg-background border border-border/50 shadow-sm hover:shadow-md transition-shadow">
