@@ -109,6 +109,30 @@
       "imageHint": "pottery"
     },
     {
+      "id": "gallery-9",
+      "description": "Галерея 9",
+      "imageUrl": "/gallery/gallery-9.jpg",
+      "imageHint": "uzbekistan street"
+    },
+    {
+      "id": "gallery-10",
+      "description": "Галерея 10",
+      "imageUrl": "/gallery/gallery-10.jpg",
+      "imageHint": "old town"
+    },
+    {
+      "id": "gallery-11",
+      "description": "Галерея 11",
+      "imageUrl": "/gallery/gallery-11.jpg",
+      "imageHint": "caravanserai"
+    },
+    {
+      "id": "gallery-12",
+      "description": "Галерея 12",
+      "imageUrl": "/gallery/gallery-12.jpg",
+      "imageHint": "uzbekistan dome"
+    },
+    {
       "id": "faq-side",
       "description": "Изображение для раздела FAQ",
       "imageUrl": "/gallery/faq.jpg",

@@ -10,7 +10,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 
-const navLinks = [
+export const navLinks = [
   { href: '/#about', label: 'О компании' },
   { href: '/#tours', label: 'Туры' },
   { href: '/#team', label: 'Команда' },

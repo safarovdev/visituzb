@@ -6,15 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Mail, Phone, MapPin } from 'lucide-react';
-
-const navLinks = [
-  { href: '/#about', label: 'О компании' },
-  { href: '/#tours', label: 'Туры' },
-  { href: '/#team', label: 'Команда' },
-  { href: '/#gallery', label: 'Галерея' },
-  { href: '/#faq', label: 'FAQ' },
-  { href: '/#contact-form', label: 'Контакты' },
-];
+import { navLinks } from './header';
 
 export function Footer() {
   const pathname = usePathname();
